@@ -13,9 +13,6 @@ function Nav() {
         width: 3000,
         height: 150,
         backgroundColor: "primary.dark",
-        "&:hover": {
-          backgroundColor: "primary.main",
-        },
       }}
     >
       <Breadcrumbs separator="||" size="lg">
