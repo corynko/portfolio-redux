@@ -1,12 +1,12 @@
 import Link from "@mui/material/Link";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Box from "@mui/material/Box";
-import muiTheme from "./muiTheme";
+// import { themeOptions as muiTheme } from "./muiTheme";
 
 function Nav() {
   return (
     <Box
-      theme={muiTheme}
+      // theme={muiTheme}
       // display={"flex"}
       // justify-content={"flex-end"}
       sx={{
