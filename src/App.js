@@ -32,7 +32,6 @@ export default function App() {
         palette: {
           mode: prefersDarkMode ? "dark" : "light",
           //dark mode
-          mode: "dark",
           primary: {
             main: "#55628b",
             light: "#7f90bd",
