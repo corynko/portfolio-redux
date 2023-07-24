@@ -12,10 +12,10 @@ import "@fontsource/public-sans";
 import theme from "./theme";
 
 //import page links
-import Home from "./pages/Home";
-import Blog from "./pages/Blog";
 import Nav from "./components/Nav";
+import Home from "./pages/Home";
 import About from "./pages/About";
+import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 
 //system-preference-set dark mode
@@ -45,8 +45,8 @@ export default function App() {
             <Nav />
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/blog" element={<Blog />} />
               <Route path="/about" element={<About />} />
+              <Route path="/portfolio" element={<Portfolio />} />
               <Route path="/contact" element={<Contact />} />
             </Routes>
           </div>
