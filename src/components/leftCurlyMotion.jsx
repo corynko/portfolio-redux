@@ -29,9 +29,9 @@ const pathVariants = {
 };
 
 const divVariants = {
-  start: { x: "55vh" },
+  start: { x: "50%" },
   finished: {
-    x: "0vh",
+    x: "0%",
     opacity: 0,
     transition: {
       duration: 2,
@@ -42,8 +42,28 @@ const divVariants = {
 };
 
 function LeftMotion() {
+  //hides animation on mobile
+  let mobileCheckDiv = {
+    start: { display: "none" },
+    finished: { display: "none" },
+  };
+  const isMobile = window.innerWidth < 1080;
+  if (!isMobile) {
+    mobileCheckDiv = {
+      start: { x: "-20%", opacity: 0 },
+      finished: {
+        x: "-40%",
+        opacity: 1,
+        transition: {
+          duration: 1,
+          ease: "easeIn",
+          delay: 2.5,
+        },
+      },
+    };
+  }
   return (
-    <div>
+    <motion.div variants={mobileCheckDiv} initial="start" animate="finished">
       <motion.div variants={divVariants} initial="start" animate="finished">
         <motion.svg
           width="120"
@@ -67,7 +87,7 @@ function LeftMotion() {
           />
         </motion.svg>
       </motion.div>
-    </div>
+    </motion.div>
   );
 }
 

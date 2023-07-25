@@ -1,48 +1,116 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { animate, motion } from "framer-motion";
 
 const svgVariants = {
-  start: {
-    rotate: -60,
-  },
+  start: {},
   finished: {
     rotate: 0,
 
     transition: {
-      duration: 0.5,
-      ease: "easeOut",
+      duration: 1,
+      ease: "easeInOut",
     },
   },
 };
 
 const pathVariants = {
-  start: { opacity: 0, pathLength: 0 },
+  start: { opacity: 0.5, pathLength: 0 },
   finished: {
     opacity: 1,
     pathLength: 1,
     transition: {
-      duration: 0.75,
+      duration: 1.1,
       ease: "easeOut",
       delay: 1,
     },
   },
 };
+const pathVariantsDel2 = {
+  start: { opacity: 0.5, pathLength: 0 },
+  finished: {
+    opacity: 1,
+    pathLength: 1,
+    transition: {
+      duration: 0.8,
+      ease: "easeOut",
+      delay: 1.35,
+    },
+  },
+};
+const pathVariantsDel3 = {
+  start: { opacity: 0.5, pathLength: 0 },
+  finished: {
+    opacity: 1,
+    pathLength: 1,
+    transition: {
+      duration: 0.6,
+      ease: "easeOut",
+      delay: 1.65,
+    },
+  },
+};
 
-function RightMotion() {
+const divVariantsLeft = {
+  start: { x: "50%" },
+  finished: {
+    x: "0%",
+    opacity: 0,
+    transition: {
+      duration: 2,
+      ease: "easeInOut",
+      delay: 2,
+    },
+  },
+};
+const divVariantsRight = {
+  start: { x: "50%" },
+  finished: {
+    x: "100%",
+    opacity: 0,
+    transition: {
+      duration: 2,
+      ease: "easeInOut",
+      delay: 2,
+    },
+  },
+};
+
+function LetteringMotion() {
+  //hides animation on mobile
+  let mobileCheckDiv = {
+    start: { display: "none" },
+    finished: { display: "none" },
+  };
+  const isMobile = window.innerWidth < 1080;
+  if (!isMobile) {
+    mobileCheckDiv = {
+      start: { x: "-20%", opacity: 0 },
+      finished: {
+        x: "-40%",
+        opacity: 1,
+        transition: {
+          duration: 1,
+          ease: "easeIn",
+          delay: 2.5,
+        },
+      },
+    };
+  }
+
   return (
-    <div>
-      <motion.svg
-        width="120"
-        height="120"
+    <motion.div variants={mobileCheckDiv} initial="start" animate="finished">
+      {/* < */}
+      {/* <motion.svg
+        width="40"
+        height="40"
         fill="transparent"
         stroke="#f5f5f5"
-        viewBox="0 0 120 110"
+        viewBox="0 0 40 40"
         xmlns="http://www.w3.org/2000/svg"
         variants={svgVariants}
         initial="start"
         animate="finished"
       >
-        {/* E */}
         <motion.path
           stroke-linecap="round"
           stroke-linejoin="round"
@@ -50,81 +118,230 @@ function RightMotion() {
           d="M 16.8 28 L 0 28 L 0 0 L 16.8 0 L 16.8 3.28 L 3.8 3.28 L 3.8 11.8 L 15 11.8 L 15 15 L 3.8 15 L 3.8 24.72 L 16.8 24.72 L 16.8 28 Z"
           variants={pathVariants}
         />
+      </motion.svg> */}
+      <motion.div
+        variants={divVariantsLeft}
+        initial="start"
+        animate="finished"
+        style={{ marginTop: 20, flexGrow: 1 }}
+      >
+        {/* E */}
+        <motion.svg
+          width="30"
+          height="30"
+          fill="transparent"
+          stroke="#f5f5f5"
+          viewBox="0 0 30 30"
+          xmlns="http://www.w3.org/2000/svg"
+          variants={svgVariants}
+          initial="start"
+          animate="finished"
+        >
+          <motion.path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width={0.5}
+            d="M 12.6 21 L 0 21 L 0 0 L 12.6 0 L 12.6 2.46 L 2.85 2.46 L 2.85 8.85 L 11.25 8.85 L 11.25 11.25 L 2.85 11.25 L 2.85 18.54 L 12.6 18.54 L 12.6 21 Z"
+            variants={pathVariants}
+          />
+        </motion.svg>
+
         {/* T */}
-        <motion.path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width={0.5}
-          d="M 12.4 28 L 8.6 28 L 8.6 3.36 L 0 3.36 L 0 0 L 21 0 L 21 3.36 L 12.4 3.36 L 12.4 28 Z"
-          variants={pathVariants}
-        />
+        <motion.svg
+          width="30"
+          height="30"
+          fill="transparent"
+          stroke="#f5f5f5"
+          viewBox="0 0 30 30"
+          xmlns="http://www.w3.org/2000/svg"
+          variants={svgVariants}
+          initial="start"
+          animate="finished"
+        >
+          <motion.path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width={0.5}
+            d="M 9.3 21 L 6.45 21 L 6.45 2.52 L 0 2.52 L 0 0 L 15.75 0 L 15.75 2.52 L 9.3 2.52 L 9.3 21 Z"
+            variants={pathVariantsDel2}
+          />
+        </motion.svg>
+
         {/* H */}
-        <motion.path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width={0.5}
-          d="M 3.8 28 L 0 28 L 0 0 L 3.8 0 L 3.8 11.96 L 17.6 11.96 L 17.6 0 L 21.4 0 L 21.4 28 L 17.6 28 L 17.6 15.24 L 3.8 15.24 L 3.8 28 Z"
-          variants={pathVariants}
-        />
+        <motion.svg
+          width="30"
+          height="30"
+          fill="transparent"
+          stroke="#f5f5f5"
+          viewBox="0 0 30 30"
+          xmlns="http://www.w3.org/2000/svg"
+          variants={svgVariants}
+          initial="start"
+          animate="finished"
+        >
+          <motion.path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width={0.5}
+            d="M 2.85 21 L 0 21 L 0 0 L 2.85 0 L 2.85 8.97 L 13.2 8.97 L 13.2 0 L 16.05 0 L 16.05 21 L 13.2 21 L 13.2 11.43 L 2.85 11.43 L 2.85 21 Z"
+            variants={pathVariantsDel3}
+          />
+        </motion.svg>
+
         {/* A */}
-        <motion.path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width={0.5}
-          d="M 25.92 27 L 22.44 28.4 L 19.32 20.4 L 6.36 20.4 L 3.24 28.32 L 0 27 L 10.96 0 L 15.12 0 L 25.92 27 Z M 12.84 3.76 L 7.56 17.2 L 18.08 17.2 L 12.84 3.76 Z"
-          variants={pathVariants}
-        />
+        <motion.svg
+          width="30"
+          height="30"
+          fill="transparent"
+          stroke="#f5f5f5"
+          viewBox="0 0 30 30"
+          xmlns="http://www.w3.org/2000/svg"
+          variants={svgVariants}
+          initial="start"
+          animate="finished"
+        >
+          <motion.path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width={0.5}
+            d="M 19.44 20.25 L 16.83 21.3 L 14.49 15.3 L 4.77 15.3 L 2.43 21.24 L 0 20.25 L 8.22 0 L 11.34 0 L 19.44 20.25 Z M 9.63 2.82 L 5.67 12.9 L 13.56 12.9 L 9.63 2.82 Z"
+            variants={pathVariantsDel2}
+          />
+        </motion.svg>
+
         {/* N */}
-        <motion.path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width={0.5}
-          d="M 3.6 28 L 0 28 L 0 0 L 5.04 0 L 17.4 23.28 L 17.4 0 L 21 0 L 21 28 L 16.04 28 L 3.6 4.88 L 3.6 28 Z"
-          variants={pathVariants}
-        />
+        <motion.svg
+          width="30"
+          height="30"
+          fill="transparent"
+          stroke="#f5f5f5"
+          viewBox="0 0 30 30"
+          xmlns="http://www.w3.org/2000/svg"
+          variants={svgVariants}
+          initial="start"
+          animate="finished"
+        >
+          <motion.path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width={0.5}
+            d="M 2.7 21 L 0 21 L 0 0 L 3.78 0 L 13.05 17.46 L 13.05 0 L 15.75 0 L 15.75 21 L 12.03 21 L 2.7 3.66 L 2.7 21 Z"
+            variants={pathVariants}
+          />
+        </motion.svg>
+      </motion.div>
+      <motion.div
+        variants={divVariantsRight}
+        initial="start"
+        animate="finished"
+      >
         {/* K */}
-        <motion.path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width={0.5}
-          d="M 20.04 25.88 L 17.4 28.6 L 3.8 15.24 L 3.8 28.12 L 0 28.12 L 0 0.12 L 3.8 0.12 L 3.8 12.88 L 15.72 0 L 18.28 2.36 L 7.36 13.72 L 20.04 25.88 Z"
-          variants={pathVariants}
-        />
+        <motion.svg
+          width="30"
+          height="30"
+          fill="transparent"
+          stroke="#f5f5f5"
+          viewBox="0 0 30 30"
+          xmlns="http://www.w3.org/2000/svg"
+          variants={svgVariants}
+          initial="start"
+          animate="finished"
+        >
+          <motion.path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width={0.5}
+            d="M 15.03 19.41 L 13.05 21.45 L 2.85 11.43 L 2.85 21.09 L 0 21.09 L 0 0.09 L 2.85 0.09 L 2.85 9.66 L 11.79 0 L 13.71 1.77 L 5.52 10.29 L 15.03 19.41 Z"
+            variants={pathVariantsDel3}
+          />
+        </motion.svg>
+
         {/* O */}
-        <motion.path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width={0.5}
-          d="M 10.164 28.657 A 14.604 14.604 0 0 0 13.2 28.96 A 15.34 15.34 0 0 0 15.265 28.825 A 12.03 12.03 0 0 0 18.76 27.82 Q 21.2 26.68 22.92 24.7 A 13.055 13.055 0 0 0 23.45 24.049 A 13.894 13.894 0 0 0 25.54 20.08 A 16.209 16.209 0 0 0 25.891 18.908 A 17.778 17.778 0 0 0 26.44 14.44 Q 26.44 11.44 25.54 8.84 Q 24.64 6.24 22.92 4.24 Q 21.2 2.24 18.74 1.12 A 11.97 11.97 0 0 0 16.384 0.335 A 14.568 14.568 0 0 0 13.2 0 Q 9.08 0 6.12 1.9 Q 3.16 3.8 1.58 7.06 A 15.195 15.195 0 0 0 0.446 10.305 A 18.473 18.473 0 0 0 0 14.44 A 19.565 19.565 0 0 0 0.014 15.185 A 17.107 17.107 0 0 0 0.9 20.08 A 15.75 15.75 0 0 0 1.076 20.569 A 13.741 13.741 0 0 0 3.5 24.7 Q 5.2 26.68 7.64 27.82 A 11.657 11.657 0 0 0 10.164 28.657 Z M 13.2 25.68 A 10.607 10.607 0 0 0 15.579 25.426 A 7.726 7.726 0 0 0 18.36 24.2 A 8.988 8.988 0 0 0 21.29 20.652 A 10.901 10.901 0 0 0 21.5 20.18 A 13.643 13.643 0 0 0 22.429 16.609 A 17.401 17.401 0 0 0 22.56 14.44 Q 22.56 12.28 21.92 10.28 A 11.894 11.894 0 0 0 20.264 6.95 A 11.248 11.248 0 0 0 20.08 6.7 Q 18.88 5.12 17.14 4.2 A 7.969 7.969 0 0 0 14.174 3.327 A 9.831 9.831 0 0 0 13.2 3.28 A 9.634 9.634 0 0 0 10.603 3.616 A 7.818 7.818 0 0 0 8.18 4.76 A 9.259 9.259 0 0 0 5.14 8.411 A 11.114 11.114 0 0 0 4.98 8.76 A 13.117 13.117 0 0 0 3.999 12.435 A 16.503 16.503 0 0 0 3.88 14.44 Q 3.88 16.6 4.5 18.62 A 11.752 11.752 0 0 0 6.173 22.039 A 11.17 11.17 0 0 0 6.32 22.24 A 8.748 8.748 0 0 0 9.26 24.76 A 7.969 7.969 0 0 0 12.227 25.633 A 9.831 9.831 0 0 0 13.2 25.68 Z"
-          variants={pathVariants}
-        />
+        <motion.svg
+          width="30"
+          height="30"
+          fill="transparent"
+          stroke="#f5f5f5"
+          viewBox="0 0 30 30"
+          xmlns="http://www.w3.org/2000/svg"
+          variants={svgVariants}
+          initial="start"
+          animate="finished"
+        >
+          <motion.path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width={0.5}
+            d="M 7.623 21.493 A 10.953 10.953 0 0 0 9.9 21.72 A 11.505 11.505 0 0 0 11.449 21.619 A 9.022 9.022 0 0 0 14.07 20.865 Q 15.9 20.01 17.19 18.525 A 9.792 9.792 0 0 0 17.588 18.037 A 10.42 10.42 0 0 0 19.155 15.06 A 12.157 12.157 0 0 0 19.418 14.181 A 13.333 13.333 0 0 0 19.83 10.83 A 14.465 14.465 0 0 0 19.806 9.997 A 12.432 12.432 0 0 0 19.155 6.63 Q 18.48 4.68 17.19 3.18 Q 15.9 1.68 14.055 0.84 A 8.978 8.978 0 0 0 12.288 0.251 A 10.926 10.926 0 0 0 9.9 0 A 11.805 11.805 0 0 0 8.032 0.143 A 8.898 8.898 0 0 0 4.59 1.425 Q 2.37 2.85 1.185 5.295 A 11.397 11.397 0 0 0 0.335 7.729 A 13.854 13.854 0 0 0 0 10.83 A 14.674 14.674 0 0 0 0.011 11.388 A 12.831 12.831 0 0 0 0.675 15.06 A 11.812 11.812 0 0 0 0.807 15.427 A 10.306 10.306 0 0 0 2.625 18.525 Q 3.9 20.01 5.73 20.865 A 8.743 8.743 0 0 0 7.623 21.493 Z M 9.9 19.26 Q 12.21 19.26 13.77 18.15 A 6.741 6.741 0 0 0 15.968 15.489 A 8.175 8.175 0 0 0 16.125 15.135 Q 16.92 13.23 16.92 10.83 Q 16.92 9.21 16.44 7.71 A 8.92 8.92 0 0 0 15.198 5.212 A 8.436 8.436 0 0 0 15.06 5.025 Q 14.16 3.84 12.855 3.15 A 5.976 5.976 0 0 0 10.63 2.496 A 7.373 7.373 0 0 0 9.9 2.46 A 7.226 7.226 0 0 0 7.953 2.712 A 5.863 5.863 0 0 0 6.135 3.57 A 6.944 6.944 0 0 0 3.855 6.308 A 8.335 8.335 0 0 0 3.735 6.57 A 9.838 9.838 0 0 0 2.999 9.327 A 12.377 12.377 0 0 0 2.91 10.83 Q 2.91 12.45 3.375 13.965 A 8.814 8.814 0 0 0 4.629 16.529 A 8.377 8.377 0 0 0 4.74 16.68 Q 5.64 17.88 6.945 18.57 A 5.976 5.976 0 0 0 9.17 19.225 A 7.373 7.373 0 0 0 9.9 19.26 Z"
+            variants={pathVariantsDel2}
+          />
+        </motion.svg>
+
         {/* T */}
-        <motion.path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width={0.5}
-          d="M 12.4 28 L 8.6 28 L 8.6 3.36 L 0 3.36 L 0 0 L 21 0 L 21 3.36 L 12.4 3.36 L 12.4 28 Z"
-          variants={pathVariants}
-        />
+        <motion.svg
+          width="30"
+          height="30"
+          fill="transparent"
+          stroke="#f5f5f5"
+          viewBox="0 0 30 30"
+          xmlns="http://www.w3.org/2000/svg"
+          variants={svgVariants}
+          initial="start"
+          animate="finished"
+        >
+          <motion.path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width={0.5}
+            d="M 9.3 21 L 6.45 21 L 6.45 2.52 L 0 2.52 L 0 0 L 15.75 0 L 15.75 2.52 L 9.3 2.52 L 9.3 21 Z"
+            variants={pathVariants}
+          />
+        </motion.svg>
+
         {/* E */}
-        <motion.path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width={0.5}
-          d="M 16.8 28 L 0 28 L 0 0 L 16.8 0 L 16.8 3.28 L 3.8 3.28 L 3.8 11.8 L 15 11.8 L 15 15 L 3.8 15 L 3.8 24.72 L 16.8 24.72 L 16.8 28 Z"
-          variants={pathVariants}
-        />
+        <motion.svg
+          width="30"
+          height="30"
+          fill="transparent"
+          stroke="#f5f5f5"
+          viewBox="0 0 30 30"
+          xmlns="http://www.w3.org/2000/svg"
+          variants={svgVariants}
+          initial="start"
+          animate="finished"
+        >
+          <motion.path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width={0.5}
+            d="M 12.6 21 L 0 21 L 0 0 L 12.6 0 L 12.6 2.46 L 2.85 2.46 L 2.85 8.85 L 11.25 8.85 L 11.25 11.25 L 2.85 11.25 L 2.85 18.54 L 12.6 18.54 L 12.6 21 Z"
+            variants={pathVariantsDel2}
+          />
+        </motion.svg>
+
         {/* L */}
-        <motion.path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width={0.5}
-          d="M 16.64 28 L 0 28 L 0 0 L 3.8 0 L 3.8 24.6 L 16.64 24.6 L 16.64 28 Z"
-          variants={pathVariants}
-        />
-      </motion.svg>
-    </div>
+        <motion.svg
+          width="30"
+          height="30"
+          fill="transparent"
+          stroke="#f5f5f5"
+          viewBox="0 0 30 30"
+          xmlns="http://www.w3.org/2000/svg"
+          variants={svgVariants}
+          initial="start"
+          animate="finished"
+        >
+          <motion.path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width={0.5}
+            d="M 12.48 21 L 0 21 L 0 0 L 2.85 0 L 2.85 18.45 L 12.48 18.45 L 12.48 21 Z"
+            variants={pathVariants}
+          />
+        </motion.svg>
+      </motion.div>
+    </motion.div>
   );
 }
 
-export default RightMotion;
+export default LetteringMotion;

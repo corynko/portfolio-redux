@@ -1,20 +1,28 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-const divVariantsFinal = {
-  start: { x: "-4vh", opacity: 0 },
-  finished: {
-    x: "-4vh",
-    opacity: 1,
-    transition: {
-      duration: 1,
-      ease: "easeIn",
-      delay: 2.5,
-    },
-  },
-};
-
 function LeftMotionFinal() {
+  //hides animation on mobile
+  let divVariantsFinal = {
+    start: { display: "none" },
+    finished: { display: "none" },
+  };
+  const isMobile = window.innerWidth < 1080;
+  if (!isMobile) {
+    divVariantsFinal = {
+      start: { x: "-20%", opacity: 0 },
+      finished: {
+        x: "-40%",
+        opacity: 1,
+        transition: {
+          duration: 1,
+          ease: "easeIn",
+          delay: 2.5,
+        },
+      },
+    };
+  }
+
   return (
     <motion.div variants={divVariantsFinal} initial="start" animate="finished">
       <svg
