@@ -9,7 +9,6 @@ import "./App.css";
 import "@fontsource/public-sans";
 
 //material imports
-// import theme from "./theme";
 
 //import page links
 import Nav from "./components/Nav";

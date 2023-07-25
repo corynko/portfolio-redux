@@ -28,6 +28,11 @@
   color: #61dafb;
 }
 
+.leftCurly svg {
+  stroke: #F5F5F5;
+}
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
