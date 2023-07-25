@@ -16,7 +16,7 @@ const svgVariants = {
 };
 
 const pathVariants = {
-  start: { opacity: 1, pathLength: 0 },
+  start: { opacity: 0.85, pathLength: 0 },
   finished: {
     opacity: 1,
     pathLength: 1,
@@ -50,15 +50,8 @@ function LeftMotion() {
   const isMobile = window.innerWidth < 1080;
   if (!isMobile) {
     mobileCheckDiv = {
-      start: { x: "-20%", opacity: 0 },
       finished: {
-        x: "-40%",
         opacity: 1,
-        transition: {
-          duration: 1,
-          ease: "easeIn",
-          delay: 2.5,
-        },
       },
     };
   }
