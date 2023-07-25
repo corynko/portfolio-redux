@@ -10,7 +10,7 @@ function RightMotionFinal() {
   const isMobile = window.innerWidth < 1080;
   if (!isMobile) {
     divVariantsFinal = {
-      start: { x: "85%", opacity: 0 },
+      start: { x: "65%", opacity: 0 },
       finished: {
         x: "85%",
         opacity: 1,
