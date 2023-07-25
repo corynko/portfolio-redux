@@ -17,14 +17,16 @@ import EKLogo from "../assets/images/EK_lettering_favicon_white_on_trans.svg";
 import blankProf from "../assets/images/blankprof.svg";
 
 //animation imports
-import LeftMotion from "./leftMotion";
-import RightMotion from "./rightMotion";
+import LeftCurlyMotion from "./leftCurlyMotion";
+import RightCurlyMotion from "./rightCurlyMotion";
+import LeftCurlyMotionFinal from "./leftCurlyMotionFinal";
+import RightCurlyMotionFinal from "./rightCurlyMotionFinal";
 import LetteringMotion from "./letteringMotion";
 
 const pages = ["who i am", "what i do", "contact me", "photography", "audio"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
-// TODO: fix opening/closing menus (commented out consts below)
+//  TODO: fix opening/closing menus (commented out consts below)
 
 function ResponsiveAppBar() {
   // const [anchorElNav, setAnchorElNav] =
@@ -51,6 +53,7 @@ function ResponsiveAppBar() {
     <AppBar position="static">
       <Container maxWidth="xxl">
         <Toolbar disableGutters>
+          <LeftCurlyMotionFinal />
           <IconButton
             size="large"
             aria-label="account of current user"
@@ -95,14 +98,14 @@ function ResponsiveAppBar() {
           >
             ETHAN KOTEL
           </Typography>
-          <LeftMotion />
+          <LeftCurlyMotion />
           <LetteringMotion
             sx={{
               display: "flex",
               justifyContent: "flex-start",
             }}
           />
-          <RightMotion />
+          <RightCurlyMotion />
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <Menu
@@ -229,6 +232,7 @@ function ResponsiveAppBar() {
               ))}
             </Menu>
           </Box>
+          <RightCurlyMotionFinal />
         </Toolbar>
         {/* </Box> */}
       </Container>
