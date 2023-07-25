@@ -99,12 +99,7 @@ function ResponsiveAppBar() {
             ETHAN KOTEL
           </Typography>
           <LeftCurlyMotion />
-          <LetteringMotion
-            sx={{
-              display: "flex",
-              justifyContent: "flex-start",
-            }}
-          />
+          <LetteringMotion />
           <RightCurlyMotion />
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
