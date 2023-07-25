@@ -11,12 +11,15 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import anime from "animejs/lib/anime.es.js";
 
+//SVG imports
 import EKLogo from "../assets/images/EK_lettering_favicon_white_on_trans.svg";
 import blankProf from "../assets/images/blankprof.svg";
-import leftCurly from "../assets/images/left_curly_white_on-Trans.svg";
-import rightCurly from "../assets/images/right_curly_white_on-Trans.svg";
+
+//animation imports
+import LeftMotion from "./leftMotion";
+import RightMotion from "./rightMotion";
+import LetteringMotion from "./letteringMotion";
 
 const pages = ["who i am", "what i do", "contact me", "photography", "audio"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
@@ -47,12 +50,6 @@ function ResponsiveAppBar() {
   return (
     <AppBar position="static">
       <Container maxWidth="xxl">
-        {/* <Box
-          sx={{
-            display: "flex",
-            justifyContent: "space-between",
-          }}
-        > */}
         <Toolbar disableGutters>
           <IconButton
             size="large"
@@ -65,19 +62,7 @@ function ResponsiveAppBar() {
           >
             <MenuIcon />
           </IconButton>
-          <Box
-            component="img"
-            sx={{
-              height: 64,
-              display: { xs: "none", md: "flex" },
-              justifyContent: "flex-start",
-              flexGrow: 0,
-              alignContent: "end",
-              mr: 2,
-            }}
-            alt="left curly bracket"
-            src={leftCurly}
-          />
+
           <Link href="/">
             <Box
               component="img"
@@ -86,7 +71,6 @@ function ResponsiveAppBar() {
                 display: { xs: "none", md: "flex" },
                 justifyContent: "flex-start",
                 flexGrow: 0,
-                alignContent: "end",
               }}
               alt="Ethan Kotel Logo"
               src={EKLogo}
@@ -111,6 +95,14 @@ function ResponsiveAppBar() {
           >
             ETHAN KOTEL
           </Typography>
+          <LeftMotion />
+          <LetteringMotion
+            sx={{
+              display: "flex",
+              justifyContent: "flex-start",
+            }}
+          />
+          <RightMotion />
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <Menu
@@ -155,7 +147,7 @@ function ResponsiveAppBar() {
               src={EKLogo}
             />
           </Link>
-
+          {/* TODO: add lettering that disappears after coming out of curlys on mobile */}
           {/* <Typography
             variant="h6"
             noWrap
@@ -196,19 +188,6 @@ function ResponsiveAppBar() {
               </Button>
             ))}
           </Box>
-          <Box
-            component="img"
-            sx={{
-              height: 64,
-              display: { xs: "none", md: "flex" },
-              justifyContent: "flex-start",
-              flexGrow: 0,
-              alignContent: "end",
-              ml: 2,
-            }}
-            alt="right curly bracket"
-            src={rightCurly}
-          />
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
