@@ -14,7 +14,7 @@ const divVariants = {
     transition: {
       duration: 1,
       ease: "easeInOut",
-      delay: 3.2,
+      delay: 5,
     },
   },
 };

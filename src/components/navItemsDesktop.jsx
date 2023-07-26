@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import { animate, motion } from "framer-motion";
 
-const pages = ["who i am", "what i do", "contact me", "photography", "audio"];
+const pages = ["who i am", "what i do", "contact me", "photos", "audio"];
 
 const divVariants = {
   start: { opacity: 0 },
@@ -13,7 +13,7 @@ const divVariants = {
     transition: {
       duration: 1,
       ease: "easeInOut",
-      delay: 3.2,
+      delay: 5,
     },
   },
 };
@@ -24,8 +24,10 @@ export default function NavItemsDesktop() {
       <Box
         sx={{
           flexGrow: 1,
-          display: { xs: "none", md: "flex" },
-          justifyContent: "flex-end",
+          display: { sm: "none", md: "flex" },
+          //   flexWrap: "wrap",
+
+          justifyContent: "space-between",
         }}
       >
         {pages.map((page) => (
