@@ -1,39 +1,42 @@
+// import Box from "@mui/material/Box";
+// import Link from "@mui/material/Link";
+
+// import Typography from "@mui/material/Typography";
+// import Menu from "@mui/material/Menu";
+// import MenuIcon from "@mui/icons-material/Menu";
+// import Container from "@mui/material/Container";
+// import Button from "@mui/material/Button";
+// import Tooltip from "@mui/material/Tooltip";
+import IconButton from "@mui/material/IconButton";
+import MenuItem from "@mui/material/MenuItem";
+// import Grid from "@mui/material/Grid";
+
+// non-animated imports
+import Toolbar from "@mui/material/Toolbar";
+import ToolbarGroup from "@mui/material/Toolbar";
 import React, { useState } from "react";
 import AppBar from "@mui/material/AppBar";
-import Box from "@mui/material/Box";
-import Link from "@mui/material/Link";
-import Toolbar from "@mui/material/Toolbar";
-import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
-import Menu from "@mui/material/Menu";
-import MenuIcon from "@mui/icons-material/Menu";
-import Container from "@mui/material/Container";
-import Button from "@mui/material/Button";
-import Tooltip from "@mui/material/Tooltip";
-import MenuItem from "@mui/material/MenuItem";
-import Grid from "@mui/material/Grid";
-
 import NavItemsMobile from "./navItemsMobile";
-import NavItemsDesktop from "./navItemsDesktop";
 
 //SVG imports
-import LogoText from "./logoTextFragment";
-import blankProf from "../assets/images/blankprof.svg";
+// import blankProf from "../assets/images/blankprof.svg";
 
-//animation imports
+//animated imports
 import LeftCurlyMotion from "./leftCurlyMotion";
 import RightCurlyMotion from "./rightCurlyMotion";
 import LeftCurlyMotionFinal from "./leftCurlyMotionFinal";
 import RightCurlyMotionFinal from "./rightCurlyMotionFinal";
 import LetteringMotion from "./letteringMotion";
+import LogoText from "./logoTextFragment";
+import NavItemsDesktop from "./navItemsDesktop";
 // const pages = ["who i am", "what i do", "contact me", "photography", "audio"];
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
+// const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 //  TODO: fix opening/closing menus (commented out consts below)
 
 function ResponsiveAppBar() {
   const [show, setShow] = useState(false);
-  setTimeout(() => setShow(true), 2000);
+  setTimeout(() => setShow(true), 100);
   // const [anchorElNav, setAnchorElNav] =
   //   (React.useState < null) | (HTMLElement > null);
   // const [anchorElUser, setAnchorElUser] =
@@ -56,11 +59,9 @@ function ResponsiveAppBar() {
 
   return (
     <AppBar position="static">
-      <Grid container spacing={16}>
-        <Grid item xs={12}>
-          <Toolbar disableGutters>
-            <LeftCurlyMotionFinal />
-            {/* <IconButton
+      <Toolbar className="toolbar" disableGutters>
+        <LeftCurlyMotionFinal />
+        {/* <IconButton
               size="large"
               aria-label="account of current user"
               aria-controls="menu-appbar"
@@ -72,14 +73,18 @@ function ResponsiveAppBar() {
               <MenuIcon />
             </IconButton> */}
 
-            {show && <LogoText />}
-            <LeftCurlyMotion />
-            <LetteringMotion />
-            <RightCurlyMotion />
+        {show && <LogoText />}
+        <LeftCurlyMotion />
 
-            {show && <NavItemsDesktop />}
+        <LetteringMotion />
 
-            {/* <Link href="/">
+        <RightCurlyMotion />
+
+        {show && <NavItemsDesktop />}
+
+        <RightCurlyMotionFinal />
+
+        {/* <Link href="/">
             <Box
               component="img"
               sx={{
@@ -90,8 +95,8 @@ function ResponsiveAppBar() {
               src={EKLogo}
             />
           </Link> */}
-            {/* TODO: add lettering that disappears after coming out of curlys on mobile */}
-            {/* <Typography
+        {/* TODO: add lettering that disappears after coming out of curlys on mobile */}
+        {/* <Typography
             variant="h6"
             noWrap
             component="a"
@@ -109,9 +114,9 @@ function ResponsiveAppBar() {
             ETHAN KOTEL
           </Typography> */}
 
-            {/* <Box sx={{ flexGrow: 0 }}>
+        {/* <Box sx={{ flexGrow: 0 }}>
               <Tooltip title="Open settings"> */}
-            {/* <IconButton sx={{ p: 0 }}>
+        {/* <IconButton sx={{ p: 0 }}>
                 <Box
                   component="img"
                   sx={{
@@ -123,10 +128,10 @@ function ResponsiveAppBar() {
                   alt="New User Avatar"
                   src={blankProf}
                 /> */}
-            {/* <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" /> */}
-            {/* </IconButton> */}
-            {/* </Tooltip> */}
-            {/* <Menu
+        {/* <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" /> */}
+        {/* </IconButton> */}
+        {/* </Tooltip> */}
+        {/* <Menu
                 sx={{ mt: "45px" }}
                 id="menu-appbar"
                 // anchorEl={anchorElUser}
@@ -142,18 +147,16 @@ function ResponsiveAppBar() {
                 open={Boolean(anchorElUser)}
                 onClose={handleCloseUserMenu}
               > */}
-            {/* {settings.map((setting) => (
+        {/* {settings.map((setting) => (
                   <MenuItem key={setting}>
                     <Typography textAlign="center">{setting}</Typography>
                   </MenuItem>
                 ))}
               </Menu>
             </Box> */}
-            <RightCurlyMotionFinal />
-          </Toolbar>
-          {/* </Box> */}
-        </Grid>
-      </Grid>
+      </Toolbar>
+
+      {/* </Box> */}
     </AppBar>
   );
 }

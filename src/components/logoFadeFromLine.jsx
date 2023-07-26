@@ -10,13 +10,13 @@ const pathVariants = {
     fill: "#F5F5F5",
 
     transition: {
-      duration: 1.1,
+      duration: 1.3,
       ease: "easeOut",
-      delay: 1,
+      delay: 3,
       fill: {
         duration: 1,
         ease: "easeInOut",
-        delay: 3,
+        delay: 5,
       },
     },
   },

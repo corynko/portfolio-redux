@@ -63,7 +63,7 @@ function RightMotion() {
             height="120"
             fill="transparent"
             stroke="#f5f5f5"
-            viewBox="0 0 120 120"
+            viewBox="0 -5 120 120"
             xmlns="http://www.w3.org/2000/svg"
             variants={svgVariants}
             initial="start"
