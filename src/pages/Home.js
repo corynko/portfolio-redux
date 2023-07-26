@@ -1,9 +1,10 @@
-import React from 'react';
+import React from "react";
+import H1HomeDrawMotion from "../components/h1FadeFromLine";
 
 export default function Home() {
   return (
     <div>
-      <h1>Home Page</h1>
+      <H1HomeDrawMotion />
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
         velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi

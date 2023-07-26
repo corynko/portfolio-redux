@@ -3,14 +3,13 @@ import { motion } from "framer-motion";
 
 const svgVariants = {
   start: {
-    rotate: -60,
+    rotate: 60,
   },
   finished: {
-    rotate: 0,
+    rotate: [90, 80, 60, 20, 0],
 
     transition: {
-      duration: 0.8,
-      ease: "easeInOut",
+      duration: 1,
     },
   },
 };
