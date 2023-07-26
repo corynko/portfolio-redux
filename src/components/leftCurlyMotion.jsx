@@ -9,6 +9,7 @@ const svgVariants = {
     rotate: [90, 80, 60, 20, 0],
 
     transition: {
+      ease: "linear",
       duration: 1,
     },
   },
@@ -28,13 +29,13 @@ const pathVariants = {
 };
 
 const divVariants = {
-  start: { x: "100%" },
+  start: { x: "225%" },
   finished: {
-    x: ["100%", "35%", "25%", "20%", "0%"],
-    opacity: [1, 1, 1, 1, 0],
+    x: ["225%", "155%", "125%", "95%", "-500%"],
+    opacity: [1, 1, 1, 0.6, 0],
     transition: {
-      duration: 2,
-      ease: "easeInOut",
+      duration: 1.4,
+      ease: "linear",
       delay: 1.25,
     },
   },

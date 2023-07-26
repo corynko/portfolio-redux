@@ -16,10 +16,10 @@ const svgVariants = {
 };
 
 const pathVariants = {
-  start: { opacity: [0.5, 0.75, 0.9, 1, 1], pathLength: 0 },
+  start: { opacity: 0, pathLength: 0 },
   finished: {
-    opacity: 1,
-    pathLength: [0, 0.1, 0.2, 0.5, 0.6, 0.8, 0.9, 1],
+    opacity: [0, 0.75, 0.75, 0.9, 1, 1],
+    pathLength: 1,
     transition: {
       duration: 3,
 
@@ -53,26 +53,26 @@ const pathVariants = {
 // };
 
 const divVariantsLeft = {
-  start: { x: "50%" },
+  start: { x: "100%" },
   finished: {
-    x: "0%",
-    opacity: 0,
+    x: ["80%", "70%", "60%", "30%", "-100%"],
+    opacity: [1, 1, 1, 0.75, 0],
     transition: {
-      duration: 1.6,
-      ease: "easeInOut",
-      delay: 2.3,
+      duration: 1.75,
+      ease: "linear",
+      delay: 1.25,
     },
   },
 };
 const divVariantsRight = {
-  start: { x: "50%" },
+  start: { x: "0%" },
   finished: {
-    x: "100%",
-    opacity: 0,
+    x: ["20%", "30%", "40%", "70%", "200%"],
+    opacity: [1, 1, 1, 0.75, 0],
     transition: {
-      duration: 1.6,
-      ease: "easeInOut",
-      delay: 2.3,
+      duration: 1.75,
+      ease: "linear",
+      delay: 1.25,
     },
   },
 };

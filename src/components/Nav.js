@@ -1,25 +1,9 @@
-// import Box from "@mui/material/Box";
-// import Link from "@mui/material/Link";
-
-// import Typography from "@mui/material/Typography";
-// import Menu from "@mui/material/Menu";
-// import MenuIcon from "@mui/icons-material/Menu";
-// import Container from "@mui/material/Container";
-// import Button from "@mui/material/Button";
-// import Tooltip from "@mui/material/Tooltip";
-import IconButton from "@mui/material/IconButton";
-import MenuItem from "@mui/material/MenuItem";
-// import Grid from "@mui/material/Grid";
-
 // non-animated imports
+import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
-import ToolbarGroup from "@mui/material/Toolbar";
 import React, { useState } from "react";
 import AppBar from "@mui/material/AppBar";
 import NavItemsMobile from "./navItemsMobile";
-
-//SVG imports
-// import blankProf from "../assets/images/blankprof.svg";
 
 //animated imports
 import LeftCurlyMotion from "./leftCurlyMotion";
@@ -29,39 +13,36 @@ import RightCurlyMotionFinal from "./rightCurlyMotionFinal";
 import LetteringMotion from "./letteringMotion";
 import LogoText from "./logoTextFragment";
 import NavItemsDesktop from "./navItemsDesktop";
-// const pages = ["who i am", "what i do", "contact me", "photography", "audio"];
-// const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 //  TODO: fix opening/closing menus (commented out consts below)
 
 function ResponsiveAppBar() {
-  const [show, setShow] = useState(false);
-  setTimeout(() => setShow(true), 100);
   // const [anchorElNav, setAnchorElNav] =
-  //   (React.useState < null) | (HTMLElement > null);
-  // const [anchorElUser, setAnchorElUser] =
   //   (React.useState < null) | (HTMLElement > null);
 
   // const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
   //   setAnchorElNav(event.currentTarget);
-  // };
-  // const handleOpenUserMenu = (event: React.MouseEvent<HTMLElement>) => {
-  //   setAnchorElUser(event.currentTarget);
   // };
 
   // const handleCloseNavMenu = () => {
   //   setAnchorElNav(null);
   // };
 
-  // const handleCloseUserMenu = () => {
-  //   setAnchorElUser(null);
-  // };
-
   return (
     <AppBar position="static">
       <Toolbar className="toolbar" disableGutters>
-        <LeftCurlyMotionFinal />
-        {/* <IconButton
+        <Box
+          sx={{
+            width: 1,
+            display: "flex",
+            flexGrow: 1,
+            justifyContent: "center",
+            alignItems: "center",
+            // border: "6px solid white",
+          }}
+        >
+          <LeftCurlyMotionFinal />
+          {/* <IconButton
               size="large"
               aria-label="account of current user"
               aria-controls="menu-appbar"
@@ -73,18 +54,18 @@ function ResponsiveAppBar() {
               <MenuIcon />
             </IconButton> */}
 
-        {show && <LogoText />}
-        <LeftCurlyMotion />
+          <LogoText />
+          <LeftCurlyMotion />
 
-        <LetteringMotion />
+          <LetteringMotion />
 
-        <RightCurlyMotion />
+          <RightCurlyMotion />
 
-        {show && <NavItemsDesktop />}
+          <NavItemsDesktop />
 
-        <RightCurlyMotionFinal />
+          <RightCurlyMotionFinal />
 
-        {/* <Link href="/">
+          {/* <Link href="/">
             <Box
               component="img"
               sx={{
@@ -95,8 +76,8 @@ function ResponsiveAppBar() {
               src={EKLogo}
             />
           </Link> */}
-        {/* TODO: add lettering that disappears after coming out of curlys on mobile */}
-        {/* <Typography
+          {/* TODO: add lettering that disappears after coming out of curlys on mobile */}
+          {/* <Typography
             variant="h6"
             noWrap
             component="a"
@@ -113,50 +94,8 @@ function ResponsiveAppBar() {
           >
             ETHAN KOTEL
           </Typography> */}
-
-        {/* <Box sx={{ flexGrow: 0 }}>
-              <Tooltip title="Open settings"> */}
-        {/* <IconButton sx={{ p: 0 }}>
-                <Box
-                  component="img"
-                  sx={{
-                    height: 64,
-                    display: { xs: "none", md: "flex" },
-                    flexGrow: 0,
-                    alignContent: "end",
-                  }}
-                  alt="New User Avatar"
-                  src={blankProf}
-                /> */}
-        {/* <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" /> */}
-        {/* </IconButton> */}
-        {/* </Tooltip> */}
-        {/* <Menu
-                sx={{ mt: "45px" }}
-                id="menu-appbar"
-                // anchorEl={anchorElUser}
-                anchorOrigin={{
-                  vertical: "top",
-                  horizontal: "right",
-                }}
-                keepMounted
-                transformOrigin={{
-                  vertical: "top",
-                  horizontal: "right",
-                }}
-                open={Boolean(anchorElUser)}
-                onClose={handleCloseUserMenu}
-              > */}
-        {/* {settings.map((setting) => (
-                  <MenuItem key={setting}>
-                    <Typography textAlign="center">{setting}</Typography>
-                  </MenuItem>
-                ))}
-              </Menu>
-            </Box> */}
+        </Box>
       </Toolbar>
-
-      {/* </Box> */}
     </AppBar>
   );
 }
