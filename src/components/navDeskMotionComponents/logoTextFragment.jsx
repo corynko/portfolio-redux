@@ -5,25 +5,40 @@ import Box from "@mui/material/Box";
 
 import LogoFadeFromLine from "./logoFadeFromLine";
 
-const divVariants = {
-  start: { opacity: 0 },
-  finished: {
-    opacity: 1,
-
-    transition: {
-      duration: 1,
-      ease: "easeInOut",
-      delay: 5,
-    },
-  },
-};
-
 export default function LogoText() {
+  let divVariants = {
+    start: { opacity: 0 },
+    finished: {
+      opacity: 1,
+
+      transition: {
+        duration: 1,
+        ease: "easeInOut",
+        delay: 5,
+      },
+    },
+  };
+  const isMobile = window.innerWidth < 1500;
+  if (isMobile) {
+    divVariants = {
+      start: { opacity: 0 },
+      finished: {
+        opacity: 1,
+
+        transition: {
+          duration: 1,
+          ease: "easeInOut",
+          delay: 1,
+        },
+      },
+    };
+  }
+
   return (
     <>
       <Box
         sx={{
-          display: { xs: "none", md: "flex" },
+          display: { xs: "none", sm: "none", md: "flex" },
           alignItems: "center",
           justifyContent: "space-between",
         }}

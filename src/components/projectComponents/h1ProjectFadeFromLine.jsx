@@ -1,7 +1,7 @@
 import React from "react";
 import { animate, delay, motion } from "framer-motion";
 
-function H1HomeDrawMotion() {
+function H1ProjectDrawMotion() {
   //speeds up animation on mobile
   let h1Variants = {
     start: { opacity: 0, stroke: "#F5F5F5" },
@@ -63,4 +63,4 @@ function H1HomeDrawMotion() {
   );
 }
 
-export default H1HomeDrawMotion;
+export default H1ProjectDrawMotion;

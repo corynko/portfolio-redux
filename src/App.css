@@ -26,6 +26,7 @@ body {
   min-width: 100%;
   max-height: 100%;
   object-fit: cover;
+  object-position: 100% 100%;
   top: 0;
   left: 0;
   right: 0;
@@ -81,13 +82,29 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex: 1;
+}
+
+.EKAvatar {
+  height: 400px;
+  border-radius: 0 50%;
+}
+
+.centerDiv {
+  align-items: center;
+  display: flex;
+}
+
+.homeImgBox {
+  display: flex;
+  justify-content: space-around;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700&family=Rubik:wght@300;400;500;600;700;800&display=swap");
 
 @media screen and (max-width: 1500px) {
   .coverImg {
-    width: 1000px;
+    width: 1500px;
     min-height: 100%;
     left: 0;
     right: 0;
@@ -99,21 +116,44 @@ body {
   .textWrapper {
     max-width: 80%;
     height: 800px;
+    margin-top: 150px;
+  }
+  .pageDiv {
+    margin-top: 0;
+  }
+  .homeImgBox {
+    flex-wrap: wrap;
+  }
+  .EKAvatar {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .EKAvatar {
+    display: none;
   }
 }
 
 @media screen and (max-width: 1000px) {
   .coverImg {
-    width: 1000px;
+    width: auto;
     min-height: 100%;
-    left: 0;
-    right: 0;
+    margin-top: 50px;
+    left: auto;
+    right: auto;
   }
   .pageBodyText {
     max-width: 100%;
     padding: 0 25px;
+    font-size: smaller;
+  }
+  .pageH1 {
+    font-size: 125%;
   }
   .textWrapper {
     max-width: 100%;
+    margin-top: 100px;
+    height: fit-content;
   }
 }

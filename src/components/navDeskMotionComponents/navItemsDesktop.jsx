@@ -3,27 +3,40 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import { animate, motion } from "framer-motion";
 
-// const pages = ["who i am", "what i do", "contact me", "photos", "audio"];
-
-const divVariants = {
-  start: { opacity: 0 },
-  finished: {
-    opacity: 1,
-
-    transition: {
-      duration: 1,
-      ease: "easeInOut",
-      delay: 5,
-    },
-  },
-};
-
 export default function NavItemsDesktop() {
+  let divVariants = {
+    start: { opacity: 0 },
+    finished: {
+      opacity: 1,
+
+      transition: {
+        duration: 1,
+        ease: "easeInOut",
+        delay: 5,
+      },
+    },
+  };
+  const isMobile = window.innerWidth < 1500;
+  if (isMobile) {
+    divVariants = {
+      start: { opacity: 0 },
+      finished: {
+        opacity: 1,
+
+        transition: {
+          duration: 1,
+          ease: "easeInOut",
+          delay: 1,
+        },
+      },
+    };
+  }
+
   return (
     <motion.div variants={divVariants} initial="start" animate="finished">
       <Box
         sx={{
-          display: { xs: "none", md: "flex" },
+          display: { xs: "none", lg: "flex" },
           textAlign: "center",
           // flexWrap: "wrap",
         }}
