@@ -3,17 +3,17 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import React, { useState } from "react";
 import AppBar from "@mui/material/AppBar";
-import NavItemsMobile from "./navItemsMobile";
+import NavItemsMobile from "./navMobileMotionComponents/navItemsMobile";
 
 //animated imports
-import LeftCurlyMotion from "./leftCurlyMotion";
-import RightCurlyMotion from "./rightCurlyMotion";
-import LeftCurlyMotionFinal from "./leftCurlyMotionFinal";
-import RightCurlyMotionFinal from "./rightCurlyMotionFinal";
-import LetteringMotion from "./letteringMotion";
-import LogoText from "./logoTextFragment";
-import NavItemsDesktop from "./navItemsDesktop";
-import LogoFadeMobile from "./logoFadeMobile";
+import LeftCurlyMotion from "./navDeskMotionComponents/leftCurlyMotion";
+import RightCurlyMotion from "./navDeskMotionComponents/rightCurlyMotion";
+import LeftCurlyMotionFinal from "./navDeskMotionComponents/leftCurlyMotionFinal";
+import RightCurlyMotionFinal from "./navDeskMotionComponents/rightCurlyMotionFinal";
+import LetteringMotion from "./navDeskMotionComponents/letteringMotion";
+import LogoFadeDesktop from "./navDeskMotionComponents/logoTextFragment";
+import NavItemsDesktop from "./navDeskMotionComponents/navItemsDesktop";
+import LogoFadeMobile from "./navMobileMotionComponents/logoFadeMobile";
 
 //  TODO: fix opening/closing menus (commented out consts below)
 
@@ -43,8 +43,9 @@ function ResponsiveAppBar() {
         >
           <LeftCurlyMotionFinal />
 
-          <LogoText />
+          <LogoFadeDesktop />
           <LogoFadeMobile />
+
           <LeftCurlyMotion />
 
           <LetteringMotion />
