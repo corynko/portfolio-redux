@@ -3,8 +3,32 @@ import { animate, delay, motion } from "framer-motion";
 import Box from "@mui/material/Box";
 
 function PHomeMotion() {
-  //hides animation on mobile
-  let pVariants = {
+  //speeds up all animations on mobile
+  let divTopVariants = {
+    start: { opacity: 0 },
+    finished: {
+      opacity: 1,
+      transition: {
+        duration: 1.5,
+        ease: "easeInOut",
+        delay: 5,
+      },
+    },
+  };
+
+  let h3Variants = {
+    start: { opacity: 0 },
+    finished: {
+      opacity: 1,
+      transition: {
+        duration: 1.5,
+        ease: "easeInOut",
+        delay: 5.2,
+      },
+    },
+  };
+
+  let h4Variants = {
     start: { opacity: 0 },
     finished: {
       opacity: 1,
@@ -12,14 +36,25 @@ function PHomeMotion() {
         duration: 1.5,
         ease: "easeInOut",
         delay: 5.4,
-        staggerChildren: 0.5,
+      },
+    },
+  };
+
+  let pVariants = {
+    start: { opacity: 0 },
+    finished: {
+      opacity: 1,
+      transition: {
+        duration: 1.5,
+        ease: "easeInOut",
+        delay: 5.6,
       },
     },
   };
 
   const isMobile = window.innerWidth < 1080;
   if (isMobile) {
-    pVariants = {
+    divTopVariants = {
       start: { opacity: 0, stroke: "#F5F5F5" },
       finished: {
         opacity: 1,
@@ -28,7 +63,41 @@ function PHomeMotion() {
           duration: 1,
           ease: "easeInOut",
           delay: 1.6,
-          staggerChildren: 0.5,
+        },
+      },
+    };
+    h3Variants = {
+      start: { opacity: 0 },
+      finished: {
+        opacity: 1,
+        transition: {
+          duration: 1.5,
+          ease: "easeInOut",
+          delay: 1.8,
+        },
+      },
+    };
+
+    h4Variants = {
+      start: { opacity: 0 },
+      finished: {
+        opacity: 1,
+        transition: {
+          duration: 1.5,
+          ease: "easeInOut",
+          delay: 2,
+        },
+      },
+    };
+
+    pVariants = {
+      start: { opacity: 0 },
+      finished: {
+        opacity: 1,
+        transition: {
+          duration: 1.5,
+          ease: "easeInOut",
+          delay: 2.2,
         },
       },
     };
@@ -36,12 +105,18 @@ function PHomeMotion() {
 
   return (
     <Box className="center" display={"flex"}>
-      <motion.div variants={pVariants} initial={"start"} animate={"finished"}>
-        <h3 className="pageH3">Hi, my name is Ethan Kotel. </h3>
-        <h4 className="pageH4">
-          I am a Denver, Colorado-based developer, musician, and photographer.
-        </h4>
-        <p className="pageBodyText">
+      <motion.div
+        variants={divTopVariants}
+        initial={"start"}
+        animate={"finished"}
+      >
+        <motion.h3 className="pageH3" variants={h3Variants}>
+          Hi, my name is Ethan Kotel.{" "}
+        </motion.h3>
+        <motion.h4 className="pageH4" variants={h4Variants}>
+          I am a Colorado based developer, musician, and photographer.
+        </motion.h4>
+        <motion.p className="pageBodyText" variants={pVariants}>
           My aim at all times is to refresh stale workflows using an outsider's
           perspective, without sacrificing form
           <span className="bold"> nor </span>
@@ -51,9 +126,9 @@ function PHomeMotion() {
           <span className="bold"> highly practical </span>and
           <span className="bold"> highly attractive </span>solutions for any
           industry.
-        </p>
+        </motion.p>
         <div style={{ marginTop: "40px" }}></div>
-        <p className="pageBodyText">
+        <motion.p className="pageBodyText" variants={pVariants}>
           I pride myself on being an extremely
           <span className="bold"> efficient </span>and
           <span className="bold"> adventurous </span>self-starter. I don't
@@ -62,7 +137,7 @@ function PHomeMotion() {
           <span className="bold"> innovate routine workflows </span>with the
           experience I've gained from working in numerous, widely varied
           industries.
-        </p>
+        </motion.p>
       </motion.div>
     </Box>
   );
