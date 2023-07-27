@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import { animate, motion } from "framer-motion";
 
-const pages = ["who i am", "what i do", "contact me", "photos", "audio"];
+// const pages = ["who i am", "what i do", "contact me", "photos", "audio"];
 
 const divVariants = {
   start: { opacity: 0 },
@@ -23,28 +23,110 @@ export default function NavItemsDesktop() {
     <motion.div variants={divVariants} initial="start" animate="finished">
       <Box
         sx={{
-          flexGrow: 1,
-          display: { sm: "none", md: "flex" },
-          //   flexWrap: "wrap",
+          display: { xs: "none", md: "flex" },
+          textAlign: "center",
 
-          justifyContent: "space-between",
+          //   flexWrap: "wrap",
         }}
       >
-        {pages.map((page) => (
-          <Button
-            key={page}
-            // onClick={handleCloseNavMenu}
-            sx={{
-              my: 4,
-              color: "white",
-              display: "block",
-              fontFamily: "Raleway",
-              fontWeight: 300,
-            }}
-          >
-            {page}
-          </Button>
-        ))}
+        {/* {pages.map((page) => ( */}
+        <Button
+          //   key={page}
+          // onClick={handleCloseNavMenu}
+          sx={{
+            color: "#F5F5F5",
+            display: "flex",
+            fontFamily: "Raleway",
+            marginX: "1.2rem",
+            marginY: 4,
+            fontWeight: 300,
+            maxHeight: "200px",
+            flexGrow: 1,
+            borderRadius: "20%",
+          }}
+          href="/"
+          fullWidth={true}
+        >
+          {/* {page} */}
+          WHO I AM
+        </Button>
+        <Button
+          //   key={page}
+          // onClick={handleCloseNavMenu}
+          sx={{
+            color: "#F5F5F5",
+            display: "flex",
+            fontFamily: "Raleway",
+            marginX: "1.2rem",
+            marginY: 4,
+            fontWeight: 300,
+            maxHeight: "200px",
+            flexGrow: 1,
+            borderRadius: "20%",
+          }}
+          href="/portfolio"
+          fullWidth={true}
+        >
+          WHAT I DO
+        </Button>
+        <Button
+          //   key={page}
+          // onClick={handleCloseNavMenu}
+          sx={{
+            color: "#F5F5F5",
+            display: "flex",
+            fontFamily: "Raleway",
+            marginX: "1.2rem",
+            marginY: 4,
+            fontWeight: 300,
+            maxHeight: "200px",
+            flexGrow: 1,
+            borderRadius: "20%",
+          }}
+          href="/contact"
+          fullWidth={true}
+        >
+          CONTACT ME
+        </Button>
+        <Button
+          //   key={page}
+          // onClick={handleCloseNavMenu}
+          sx={{
+            color: "#F5F5F5",
+            display: "flex",
+            fontFamily: "Raleway",
+            marginX: "1.2rem",
+            marginY: 4,
+            fontWeight: 300,
+            maxHeight: "200px",
+            flexGrow: 1,
+            borderRadius: "20%",
+          }}
+          href="https://ethankotel.photos"
+          fullWidth={true}
+        >
+          PHOTOS
+        </Button>
+        <Button
+          //   key={page}
+          // onClick={handleCloseNavMenu}
+          sx={{
+            color: "#F5F5F5",
+            display: "flex",
+            fontFamily: "Raleway",
+            marginX: "1.2rem",
+            marginY: 4,
+            fontWeight: 300,
+            maxHeight: "200px",
+            flexGrow: 1,
+            borderRadius: "20%",
+          }}
+          href="https://ethankotel.com"
+          fullWidth={true}
+        >
+          AUDIO
+        </Button>
+        {/* ))} */}
       </Box>
     </motion.div>
   );
