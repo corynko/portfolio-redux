@@ -1,27 +1,50 @@
 import React from "react";
 import { animate, delay, motion } from "framer-motion";
 
-const pathVariants = {
-  start: { opacity: 0, pathLength: 0, fill: "#00000000" },
-  finished: {
-    opacity: 1,
-    pathLength: 1,
-    fill: "#F5F5F5",
+function LogoFadeFromLine() {
+  let pathVariants = {
+    start: { opacity: 0, pathLength: 0, fill: "#00000000" },
+    finished: {
+      opacity: 1,
+      pathLength: 1,
+      fill: "#F5F5F5",
 
-    transition: {
-      duration: 1.3,
-      ease: "easeOut",
-      delay: 3,
-      fill: {
-        duration: 1,
-        ease: "easeInOut",
-        delay: 5,
+      transition: {
+        duration: 1.3,
+        ease: "easeOut",
+        delay: 3,
+        fill: {
+          duration: 1,
+          ease: "easeInOut",
+          delay: 5,
+        },
       },
     },
-  },
-};
+  };
 
-function LogoFadeFromLine() {
+  const isMobile = window.innerWidth < 1500;
+  if (isMobile) {
+    pathVariants = {
+      start: { opacity: 0, pathLength: 0, fill: "#00000000" },
+      finished: {
+        opacity: 1,
+        pathLength: 1,
+        fill: "#F5F5F5",
+
+        transition: {
+          duration: 1.3,
+          ease: "easeOut",
+
+          fill: {
+            duration: 1,
+            ease: "easeInOut",
+            delay: 1.5,
+          },
+        },
+      },
+    };
+  }
+
   return (
     <div>
       <motion.svg

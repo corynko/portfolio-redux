@@ -64,7 +64,7 @@ export default function NavItemsDesktop() {
     <motion.div variants={divVariants} initial="start" animate="finished">
       <Box
         sx={{
-          display: { xs: "flex", md: "none" },
+          display: { xs: "flex", lg: "none" },
           textAlign: "center",
           flexDirection: "column",
         }}

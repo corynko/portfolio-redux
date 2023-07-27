@@ -3,7 +3,7 @@ import { animate, delay, motion } from "framer-motion";
 import Box from "@mui/material/Box";
 import EKAvatar from "../../assets/images/EKP_self_portrait.jpg";
 
-function PHomeMotion() {
+function PProjectMotion() {
   //speeds up all animations on mobile
   let divTopVariants = {
     start: { opacity: 0 },
@@ -192,4 +192,4 @@ function PHomeMotion() {
   );
 }
 
-export default PHomeMotion;
+export default PProjectMotion;

@@ -153,16 +153,14 @@ export default function App() {
     <Router>
       <ThemeProvider theme={theme}>
         <CssBaseline />
-        <div className="flex-column justify-flex-start min-100-vh">
-          <div className="container">
-            <Nav />
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/portfolio" element={<Portfolio />} />
-              <Route path="/contact" element={<Contact />} />
-            </Routes>
-          </div>
+        <div className="container">
+          <Nav />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
         </div>
       </ThemeProvider>
     </Router>

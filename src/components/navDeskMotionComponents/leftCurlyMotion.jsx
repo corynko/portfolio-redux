@@ -47,7 +47,7 @@ function LeftMotion() {
     start: { display: "none" },
     finished: { display: "none" },
   };
-  const isMobile = window.innerWidth < 1080;
+  const isMobile = window.innerWidth < 1500;
   if (!isMobile) {
     mobileCheckDiv = {
       finished: {

@@ -7,7 +7,7 @@ function LeftMotionFinal() {
     start: { display: "none" },
     finished: { display: "none" },
   };
-  const isMobile = window.innerWidth < 1080;
+  const isMobile = window.innerWidth < 1500;
   if (!isMobile) {
     divVariantsFinal = {
       start: { x: "20%", opacity: 0, fill: "#00000000" },
