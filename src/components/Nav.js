@@ -13,6 +13,7 @@ import RightCurlyMotionFinal from "./rightCurlyMotionFinal";
 import LetteringMotion from "./letteringMotion";
 import LogoText from "./logoTextFragment";
 import NavItemsDesktop from "./navItemsDesktop";
+import LogoFadeMobile from "./logoFadeMobile";
 
 //  TODO: fix opening/closing menus (commented out consts below)
 
@@ -55,6 +56,7 @@ function ResponsiveAppBar() {
             </IconButton> */}
 
           <LogoText />
+          <LogoFadeMobile />
           <LeftCurlyMotion />
 
           <LetteringMotion />
@@ -62,6 +64,7 @@ function ResponsiveAppBar() {
           <RightCurlyMotion />
 
           <NavItemsDesktop />
+          <NavItemsMobile />
 
           <RightCurlyMotionFinal />
 

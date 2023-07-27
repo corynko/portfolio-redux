@@ -11,17 +11,17 @@ const pathVariants = {
     transition: {
       duration: 1.3,
       ease: "easeOut",
-      delay: 3,
+
       fill: {
         duration: 1,
         ease: "easeInOut",
-        delay: 5,
+        delay: 1.25,
       },
     },
   },
 };
 
-function LogoFadeFromLine() {
+function LogoFadeMobile() {
   return (
     <div>
       <motion.svg
@@ -31,9 +31,9 @@ function LogoFadeFromLine() {
         width="90px"
         height="90px"
         viewBox="0 0 90 90"
+        // variants={svgVariants}
         initial="start"
         animate="finished"
-        display={{ xs: "none", md: "flex" }}
       >
         <motion.polygon
           stroke="#F5F5F5"
@@ -57,4 +57,4 @@ function LogoFadeFromLine() {
   );
 }
 
-export default LogoFadeFromLine;
+export default LogoFadeMobile;
