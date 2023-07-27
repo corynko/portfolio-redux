@@ -100,6 +100,18 @@ body {
   justify-content: space-around;
 }
 
+.homeCoverImg {
+  position: absolute;
+  /* top: -50%; */
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: url("./assets/images/EKP_EGATM-28.jpg");
+  z-index: -12;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700&family=Rubik:wght@300;400;500;600;700;800&display=swap");
 
 @media screen and (max-width: 1500px) {

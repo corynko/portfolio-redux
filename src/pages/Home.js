@@ -6,8 +6,8 @@ import PHomeMotion from "../components/homeComponents/pHomeMotion";
 export default function Home() {
   return (
     <div>
+      <ImgHomeMotion />
       <div className="pageDiv">
-        <ImgHomeMotion />
         <div className="textWrapper">
           <H1HomeDrawMotion />
           <PHomeMotion />
