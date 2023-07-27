@@ -39,6 +39,7 @@ export default function NavItemsDesktop() {
             marginX: "1rem",
             fontWeight: 300,
             maxHeight: "100px",
+            whiteSpace: "nowrap",
             flexGrow: 1,
             borderRadius: "20%",
           }}
@@ -58,6 +59,7 @@ export default function NavItemsDesktop() {
             marginX: "1rem",
             fontWeight: 300,
             maxHeight: "100px",
+            whiteSpace: "nowrap",
             flexGrow: 1,
             borderRadius: "20%",
           }}
@@ -76,6 +78,7 @@ export default function NavItemsDesktop() {
             marginX: "1rem",
             fontWeight: 300,
             maxHeight: "100px",
+            whiteSpace: "nowrap",
             flexGrow: 1,
             borderRadius: "20%",
           }}
@@ -94,6 +97,7 @@ export default function NavItemsDesktop() {
             marginX: "1rem",
             fontWeight: 300,
             maxHeight: "100px",
+            whiteSpace: "nowrap",
             flexGrow: 1,
             borderRadius: "20%",
           }}
@@ -112,6 +116,7 @@ export default function NavItemsDesktop() {
             marginX: "1rem",
             fontWeight: 300,
             maxHeight: "100px",
+            whiteSpace: "nowrap",
             flexGrow: 1,
             borderRadius: "20%",
           }}

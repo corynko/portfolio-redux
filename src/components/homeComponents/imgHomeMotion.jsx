@@ -1,6 +1,6 @@
 import React from "react";
 import { animate, delay, motion } from "framer-motion";
-import homeImg from "../assets/images/EKP_ATM_MM-50.jpg";
+import homeImg from "../../assets/images/EKP_EGATM-28.jpg";
 
 function ImgHomeMotion() {
   //speeds up animation on mobile
@@ -12,9 +12,9 @@ function ImgHomeMotion() {
       borderRadius: 0,
       transition: {
         duration: 1.5,
-        ease: "easeInOut",
-        delay: 4.2,
-        staggerChildren: 0.5,
+        ease: "easeOut",
+        delay: 4.5,
+
         borderRadius: {
           delay: 3.8,
           duration: 2,
@@ -31,7 +31,7 @@ function ImgHomeMotion() {
         opacity: 1,
         transition: {
           duration: 1,
-          ease: "easeInOut",
+          ease: "easeOut",
           delay: 1.2,
         },
       },
