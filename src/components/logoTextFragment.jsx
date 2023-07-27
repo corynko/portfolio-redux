@@ -21,7 +21,13 @@ const divVariants = {
 export default function LogoText() {
   return (
     <>
-      <Box sx={{ display: { xs: "none", md: "flex" } }}>
+      <Box
+        sx={{
+          display: { xs: "none", md: "flex" },
+          alignItems: "center",
+          justifyContent: "space-between",
+        }}
+      >
         <Link href="/">
           <LogoFadeFromLine />
         </Link>
@@ -34,7 +40,7 @@ export default function LogoText() {
             sx={{
               ml: 2,
               mr: 2,
-              // display: { xs: "none", md: "flex" },
+
               fontFamily: "montserrat",
               fontWeight: 500,
               letterSpacing: ".3rem",

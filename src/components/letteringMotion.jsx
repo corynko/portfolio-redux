@@ -23,7 +23,7 @@ const pathVariants = {
     transition: {
       duration: 3,
 
-      delay: 1.25,
+      delay: 1.5,
     },
   },
 };
@@ -53,9 +53,9 @@ const pathVariants = {
 // };
 
 const divVariantsLeft = {
-  start: { x: "100%" },
+  start: { x: "80%" },
   finished: {
-    x: ["80%", "70%", "60%", "30%", "-100%"],
+    x: ["80%", "60%", "50%", "20%", "-100%"],
     opacity: [1, 1, 1, 0.75, 0],
     transition: {
       duration: 1.75,
@@ -65,9 +65,9 @@ const divVariantsLeft = {
   },
 };
 const divVariantsRight = {
-  start: { x: "0%" },
+  start: { x: "40%" },
   finished: {
-    x: ["20%", "30%", "40%", "70%", "200%"],
+    x: ["40%", "60%", "80%", "100%", "220%"],
     opacity: [1, 1, 1, 0.75, 0],
     transition: {
       duration: 1.75,
@@ -108,16 +108,13 @@ function LetteringMotion() {
       <Grid container spacing={2}>
         <Grid item xs={6}>
           <motion.div variants={divVariantsLeft}>
-            <motion.svg
-              width="250"
-              height="250"
+            <svg
+              width="200"
+              height="200"
               fill="transparent"
               stroke="#f5f5f5"
               viewBox="0 10 200 1"
               xmlns="http://www.w3.org/2000/svg"
-              variants={svgVariants}
-              initial="start"
-              animate="finished"
             >
               <motion.path
                 stroke-linecap="round"
@@ -126,14 +123,14 @@ function LetteringMotion() {
                 d="M 82.2 21 L 81.6 21 L 81.6 0 L 82.11 0 L 97.83 20.31 L 97.5 20.31 L 97.5 0 L 98.1 0 L 98.1 21 L 97.59 21 L 81.87 0.69 L 82.2 0.69 L 82.2 21 Z M 0.6 0.57 L 0.6 20.43 L 13.98 20.43 L 13.98 21 L 0 21 L 0 0 L 13.53 0 L 13.53 0.57 L 0.6 0.57 Z M 57.93 21 L 57.24 21 L 66.99 0 L 67.59 0 L 77.34 21 L 76.65 21 L 67.14 0.48 L 67.44 0.48 L 57.93 21 Z M 24.57 21 L 23.97 21 L 23.97 0.57 L 16.17 0.57 L 16.17 0 L 32.37 0 L 32.37 0.57 L 24.57 0.57 L 24.57 21 Z M 37.08 0 L 37.08 21 L 36.48 21 L 36.48 0 L 37.08 0 Z M 52.38 21 L 52.38 0 L 52.98 0 L 52.98 21 L 52.38 21 Z M 52.53 10.05 L 52.53 10.62 L 36.93 10.62 L 36.93 10.05 L 52.53 10.05 Z M 74.1 14.67 L 60.45 14.67 L 60.75 14.1 L 73.8 14.1 L 74.1 14.67 Z M 0.45 10.62 L 0.45 10.05 L 12.18 10.05 L 12.18 10.62 L 0.45 10.62 Z"
                 variants={pathVariants}
               />
-            </motion.svg>
+            </svg>
           </motion.div>
         </Grid>
         <Grid item xs={6}>
           <motion.div variants={divVariantsRight}>
             <motion.svg
-              width="250"
-              height="250"
+              width="200"
+              height="200"
               fill="transparent"
               stroke="#f5f5f5"
               viewBox="0 10 200 1"
