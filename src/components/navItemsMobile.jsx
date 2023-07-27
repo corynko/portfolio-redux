@@ -77,10 +77,10 @@ export default function NavItemsDesktop() {
             color: "#F5F5F5",
             display: "flex",
             fontFamily: "Raleway",
-            marginX: "1.2rem",
+            marginX: "1rem",
             marginY: 1,
             fontWeight: 300,
-            maxHeight: "200px",
+            maxHeight: "100px",
             flexGrow: 1,
             borderRadius: "20%",
           }}
@@ -97,10 +97,10 @@ export default function NavItemsDesktop() {
             color: "#F5F5F5",
             display: "flex",
             fontFamily: "Raleway",
-            marginX: "1.2rem",
+            marginX: "1rem",
             marginY: 1,
             fontWeight: 300,
-            maxHeight: "200px",
+            maxHeight: "100px",
             flexGrow: 1,
             borderRadius: "20%",
           }}
@@ -116,10 +116,10 @@ export default function NavItemsDesktop() {
             color: "#F5F5F5",
             display: "flex",
             fontFamily: "Raleway",
-            marginX: "1.2rem",
+            marginX: "1rem",
             marginY: 1,
             fontWeight: 300,
-            maxHeight: "200px",
+            maxHeight: "100px",
             flexGrow: 1,
             borderRadius: "20%",
           }}
@@ -135,10 +135,10 @@ export default function NavItemsDesktop() {
             color: "#F5F5F5",
             display: "flex",
             fontFamily: "Raleway",
-            marginX: "1.2rem",
+            marginX: "1rem",
             marginY: 1,
             fontWeight: 300,
-            maxHeight: "200px",
+            maxHeight: "100px",
             flexGrow: 1,
             borderRadius: "20%",
           }}
@@ -154,14 +154,14 @@ export default function NavItemsDesktop() {
             color: "#F5F5F5",
             display: "flex",
             fontFamily: "Raleway",
-            marginX: "1.2rem",
+            marginX: "1rem",
             marginY: 1,
             fontWeight: 300,
-            maxHeight: "200px",
+            maxHeight: "100px",
             flexGrow: 1,
             borderRadius: "20%",
           }}
-          href="https://ethankotel.com"
+          href="https://www.ethankotel.com/"
           fullWidth={true}
         >
           AUDIO
