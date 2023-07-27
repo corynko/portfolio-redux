@@ -12,7 +12,6 @@ function H1HomeDrawMotion() {
         duration: 1.5,
         ease: "easeInOut",
         delay: 5.2,
-        staggerChildren: 0.5,
       },
     },
   };
@@ -28,7 +27,6 @@ function H1HomeDrawMotion() {
           duration: 1,
           ease: "easeInOut",
           delay: 1.6,
-          staggerChildren: 0.5,
         },
       },
     };

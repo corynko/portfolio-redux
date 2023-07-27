@@ -113,7 +113,6 @@ export default function NavItemsDesktop() {
             color: "#F5F5F5",
             display: "flex",
             fontFamily: "Raleway",
-            marginX: "1rem",
             fontWeight: 300,
             maxHeight: "100px",
             whiteSpace: "nowrap",

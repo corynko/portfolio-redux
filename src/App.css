@@ -2,25 +2,6 @@ body {
   margin: 0 0;
 }
 
-.App {
-  text-align: center;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
 .leftCurly svg {
   stroke: #f5f5f5;
 }
@@ -62,21 +43,26 @@ body {
   max-width: 70%;
   margin: auto;
   font-size: 115%;
+  font-weight: 400;
+  text-shadow: 1px 1px #282c34;
   -webkit-text-stroke-width: 0.25px;
   -webkit-text-stroke-color: #292929;
 }
 
 .pageH1 {
+  text-shadow: 2px 2px #282c34;
   -webkit-text-stroke-width: 1.25px;
   -webkit-text-stroke-color: #292929;
 }
 .pageH3 {
+  text-shadow: 1px 1px #282c34;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #292929;
   font-size: 115%;
   margin-top: 0%;
 }
 .pageH4 {
+  text-shadow: 1px 1px #282c34;
   -webkit-text-stroke-width: 0.75px;
   -webkit-text-stroke-color: #292929;
   font-size: 115%;
@@ -84,21 +70,12 @@ body {
 }
 
 .pageDiv {
-  margin-top: 5%;
-  display: flex;
-  justify-content: center;
-}
-
-.homePageDiv {
-  margin-top: 5%;
+  margin-top: 3%;
   display: flex;
   justify-content: center;
 }
 
 .textWrapper {
-  /* background-color: #282c3457;
-  box-shadow: 0 0 0 14px #282c3433;
-  border-radius: 50%; */
   max-width: 60%;
   height: 800px;
   display: flex;
@@ -107,3 +84,36 @@ body {
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700&family=Rubik:wght@300;400;500;600;700;800&display=swap");
+
+@media screen and (max-width: 1500px) {
+  .coverImg {
+    width: 1000px;
+    min-height: 100%;
+    left: 0;
+    right: 0;
+  }
+  .pageBodyText {
+    max-width: 80%;
+    margin: auto;
+  }
+  .textWrapper {
+    max-width: 80%;
+    height: 800px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .coverImg {
+    width: 1000px;
+    min-height: 100%;
+    left: 0;
+    right: 0;
+  }
+  .pageBodyText {
+    max-width: 100%;
+    padding: 0 25px;
+  }
+  .textWrapper {
+    max-width: 100%;
+  }
+}
