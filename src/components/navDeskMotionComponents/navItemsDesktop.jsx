@@ -1,6 +1,7 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
+import { Link } from "react-router-dom";
 import { animate, motion } from "framer-motion";
 
 export default function NavItemsDesktop() {
@@ -40,23 +41,24 @@ export default function NavItemsDesktop() {
           textAlign: "center",
         }}
       >
-        <Button
-          sx={{
-            color: "#F5F5F5",
-            display: "flex",
-            fontFamily: "Raleway",
-            marginX: "1rem",
-            fontWeight: 300,
-            maxHeight: "100px",
-            whiteSpace: "nowrap",
-            flexGrow: 1,
-            borderRadius: "20%",
-          }}
-          href="/"
-          fullWidth={true}
-        >
-          WHO I AM
-        </Button>
+        <Link to="/">
+          <Button
+            sx={{
+              color: "#F5F5F5",
+              display: "flex",
+              fontFamily: "Raleway",
+              marginX: "1rem",
+              fontWeight: 300,
+              maxHeight: "100px",
+              whiteSpace: "nowrap",
+              flexGrow: 1,
+              borderRadius: "20%",
+            }}
+            fullWidth={true}
+          >
+            WHO I AM
+          </Button>
+        </Link>
         <Button
           sx={{
             color: "#F5F5F5",
