@@ -1,9 +1,4 @@
-import IconButton from "@mui/material/IconButton";
-
-import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
-import MenuItem from "@mui/material/MenuItem";
-import ListItem from "@mui/material/ListItem";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Button";
@@ -149,28 +144,28 @@ function NavDrawerMobile() {
     //   color="inherit"
     // >
     <div>
-      <MenuIcon />
-      <React.Fragment>
-        <Button onClick={toggleDrawer(true)}></Button>
-        <SwipeableDrawer
-          open={openDrawer}
-          onOpen={toggleDrawer(true)}
-          onClose={toggleDrawer(false)}
-          anchor="right"
-          // variant="temporary"
-          sx={{
-            display: { xs: "flex", md: "none" },
-            flexDirection: "column",
-          }}
-        >
-          {list}
-          {/* anchor="right"
+      <Button onClick={toggleDrawer(true)}>
+        <MenuIcon className="menuIcon" />
+      </Button>
+
+      <SwipeableDrawer
+        open={openDrawer}
+        onOpen={toggleDrawer(true)}
+        onClose={toggleDrawer(false)}
+        anchor="right"
+        // variant="temporary"
+        sx={{
+          display: { xs: "flex", md: "none" },
+          flexDirection: "column",
+        }}
+      >
+        {list}
+        {/* anchor="right"
       variant="temporary"
       open={open}
       onClose={setOpenDrawer(false)}
       onOpen={setOpenDrawer(true)} */}
-        </SwipeableDrawer>
-      </React.Fragment>
+      </SwipeableDrawer>
     </div>
   );
 }
