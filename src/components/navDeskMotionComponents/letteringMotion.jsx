@@ -92,9 +92,9 @@ function LetteringMotion() {
     },
   };
   let divVariantsRight = {
-    start: { x: "200%" },
+    start: { x: "250%" },
     finished: {
-      x: ["200%", "280%", "330%", "400%", "620%"],
+      x: ["250%", "250%", "300%", "400%", "620%"],
       opacity: [1, 1, 1, 0.75, 0],
       transition: {
         duration: 1.75,
