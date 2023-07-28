@@ -67,8 +67,8 @@ function LogoFadeFromLine() {
         />
 
         <motion.path
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           fill={"none"}
           stroke="#F5F5F5"
           d="M34.4,6.1h10v37.5h0.3c2.1-3,4.2-5.8,6.1-8.3L74.7,6.1h12.5L59,39.1
