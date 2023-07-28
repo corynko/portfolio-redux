@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-redux/static/css/main.b50ad238.css",
-    "main.js": "/portfolio-redux/static/js/main.a0b8b730.js",
+    "main.js": "/portfolio-redux/static/js/main.afbe2cf2.js",
     "static/js/787.a2cb61a6.chunk.js": "/portfolio-redux/static/js/787.a2cb61a6.chunk.js",
     "static/media/EKP_self_portrait.jpg": "/portfolio-redux/static/media/EKP_self_portrait.77a65978e705d7802590.jpg",
     "static/media/EKP_EGATM-28.jpg": "/portfolio-redux/static/media/EKP_EGATM-28.25a786aac386a0a6ad2f.jpg",
@@ -14,11 +14,11 @@
     "static/media/public-sans-vietnamese-400-normal.woff2": "/portfolio-redux/static/media/public-sans-vietnamese-400-normal.4490eed5a77c4164de3d.woff2",
     "index.html": "/portfolio-redux/index.html",
     "main.b50ad238.css.map": "/portfolio-redux/static/css/main.b50ad238.css.map",
-    "main.a0b8b730.js.map": "/portfolio-redux/static/js/main.a0b8b730.js.map",
+    "main.afbe2cf2.js.map": "/portfolio-redux/static/js/main.afbe2cf2.js.map",
     "787.a2cb61a6.chunk.js.map": "/portfolio-redux/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b50ad238.css",
-    "static/js/main.a0b8b730.js"
+    "static/js/main.afbe2cf2.js"
   ]
 }
