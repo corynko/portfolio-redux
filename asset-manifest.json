@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.75bbaeb0.css",
+    "main.js": "/static/js/main.65567c25.js",
+    "static/js/787.a2cb61a6.chunk.js": "/static/js/787.a2cb61a6.chunk.js",
+    "static/media/EKP_self_portrait.jpg": "/static/media/EKP_self_portrait.77a65978e705d7802590.jpg",
+    "static/media/EKP_EGATM-28.jpg": "/static/media/EKP_EGATM-28.25a786aac386a0a6ad2f.jpg",
+    "static/media/EKP_ZOO-102.jpg": "/static/media/EKP_ZOO-102.4a423f44b06999852ddf.jpg",
+    "static/media/public-sans-latin-400-normal.woff": "/static/media/public-sans-latin-400-normal.9d2594c80c36f4b1e2ee.woff",
+    "static/media/public-sans-latin-400-normal.woff2": "/static/media/public-sans-latin-400-normal.4758638f2eeeaf0dd6c4.woff2",
+    "static/media/public-sans-latin-ext-400-normal.woff": "/static/media/public-sans-latin-ext-400-normal.8d4f2b95588a9c535ad8.woff",
+    "static/media/public-sans-latin-ext-400-normal.woff2": "/static/media/public-sans-latin-ext-400-normal.cbd34e580c9965bfc3c9.woff2",
+    "static/media/public-sans-vietnamese-400-normal.woff": "/static/media/public-sans-vietnamese-400-normal.9b355e63a25fe5dec690.woff",
+    "static/media/public-sans-vietnamese-400-normal.woff2": "/static/media/public-sans-vietnamese-400-normal.4490eed5a77c4164de3d.woff2",
+    "index.html": "/index.html",
+    "main.75bbaeb0.css.map": "/static/css/main.75bbaeb0.css.map",
+    "main.65567c25.js.map": "/static/js/main.65567c25.js.map",
+    "787.a2cb61a6.chunk.js.map": "/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.75bbaeb0.css",
+    "static/js/main.65567c25.js"
+  ]
+}
