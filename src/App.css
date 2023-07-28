@@ -108,6 +108,7 @@ body {
 }
 
 .homeH1H3 {
+  margin-top: 200px;
   display: flex;
   flex-direction: column;
 }
@@ -115,6 +116,11 @@ body {
 .homeImgBox {
   display: flex;
   justify-content: space-around;
+}
+
+.divHomeWrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .homeCoverImg,

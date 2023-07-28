@@ -138,28 +138,30 @@ function PHomeMotion() {
         <motion.h4 className="pageH4" variants={h4Variants}>
           I am a Colorado based developer, musician, and photographer.
         </motion.h4>
-        <motion.p className="pageBodyText" variants={pVariants}>
-          My aim at all times is to refresh stale workflows using an outsider's
-          perspective, without sacrificing form
-          <span className="bold"> nor </span>
-          functionality. Since starting my journey in full-stack web
-          development, I have made it a point to blend my keen eye for design
-          with my strong background in marketing, in order to deliver both
-          <span className="bold"> highly practical </span>and
-          <span className="bold"> highly attractive </span>solutions for any
-          industry.
-        </motion.p>
-        <div style={{ marginTop: "40px" }}></div>
-        <motion.p className="pageBodyText" variants={pVariants}>
-          I pride myself on being an extremely
-          <span className="bold"> efficient </span>and
-          <span className="bold"> adventurous </span>self-starter. I don't
-          believe in doing things the same way simply because "that's how it's
-          always been done," and am always looking for the next opportunity to
-          <span className="bold"> innovate routine workflows </span>with the
-          experience I've gained from working in numerous, widely varied
-          industries.
-        </motion.p>
+        <div className="divHomeWrapper">
+          <motion.p className="pageBodyText" variants={pVariants}>
+            My aim at all times is to refresh stale workflows using an
+            outsider's perspective, without sacrificing form
+            <span className="bold"> nor </span>
+            functionality. Since starting my journey in full-stack web
+            development, I have made it a point to blend my keen eye for design
+            with my strong background in marketing, in order to deliver both
+            <span className="bold"> highly practical </span>and
+            <span className="bold"> highly attractive </span>solutions for any
+            industry.
+          </motion.p>
+          <div style={{ marginTop: "40px" }}></div>
+          <motion.p className="pageBodyText" variants={pVariants}>
+            I pride myself on being an extremely
+            <span className="bold"> efficient </span>and
+            <span className="bold"> adventurous </span>self-starter. I don't
+            believe in doing things the same way simply because "that's how it's
+            always been done," and am always looking for the next opportunity to
+            <span className="bold"> innovate routine workflows </span>with the
+            experience I've gained from working in numerous, widely varied
+            industries.
+          </motion.p>
+        </div>
       </motion.div>
     </Box>
   );

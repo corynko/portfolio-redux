@@ -70,7 +70,7 @@ function NavDrawerMobile() {
           flexGrow: 1,
           borderRadius: "20%",
         }}
-        href="/portfolio"
+        href="/projects"
         fullWidth={true}
       >
         WHAT I DO
