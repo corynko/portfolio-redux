@@ -15,20 +15,7 @@ import LogoFadeDesktop from "./navDeskMotionComponents/logoTextFragment";
 import NavItemsDesktop from "./navDeskMotionComponents/navItemsDesktop";
 import LogoFadeMobile from "./navMobileMotionComponents/logoFadeMobile";
 
-//  TODO: fix opening/closing menus (commented out consts below)
-
 function ResponsiveAppBar() {
-  // const [anchorElNav, setAnchorElNav] =
-  //   (React.useState < null) | (HTMLElement > null);
-
-  // const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
-  //   setAnchorElNav(event.currentTarget);
-  // };
-
-  // const handleCloseNavMenu = () => {
-  //   setAnchorElNav(null);
-  // };
-
   return (
     <AppBar position="static" className="appbar">
       <Toolbar className="toolbar" disableGutters>
@@ -59,17 +46,6 @@ function ResponsiveAppBar() {
         </Box>
       </Toolbar>
     </AppBar>
-    /* <IconButton
-              size="large"
-              aria-label="account of current user"
-              aria-controls="menu-appbar"
-              aria-haspopup="true"
-              // onClick={handleOpenNavMenu}
-              color="inherit"
-              sx={{ display: { xs: "flex", md: "none" } }}
-            >
-              <MenuIcon />
-            </IconButton> */
   );
 }
 export default ResponsiveAppBar;

@@ -2,22 +2,22 @@ import React from "react";
 import { animate, delay, motion } from "framer-motion";
 import homeImg from "../../assets/images/EKP_EGATM-28.jpg";
 
-function ImgProjectMotion() {
+function ImgHomeMotion() {
   //speeds up animation on mobile
   let imgVariants = {
     start: { opacity: 0, stroke: "#F5F5F5", borderRadius: "100%" },
     finished: {
       opacity: 1,
       fill: "#F5F5F5",
-      borderRadius: 0,
+      borderRadius: ["100%", "40%", "30%", "20%", 0],
       transition: {
-        duration: 1.5,
+        duration: 1,
         ease: "easeOut",
-        delay: 4.5,
+        delay: 0.2,
 
         borderRadius: {
-          delay: 3.8,
-          duration: 2,
+          duration: 0.4,
+          ease: "linear",
         },
       },
     },
@@ -39,18 +39,13 @@ function ImgProjectMotion() {
   }
 
   return (
-    <div className="center">
-      {/* DENVER */}
-      <motion.img
-        src={homeImg}
-        alt="Evergroove Studio as shot by Ethan Kotel"
-        className="coverImg"
-        variants={imgVariants}
-        initial={"start"}
-        animate={"finished"}
-      ></motion.img>
-    </div>
+    <motion.div
+      className="center projectCoverImg"
+      variants={imgVariants}
+      initial="start"
+      animate="finished"
+    />
   );
 }
 
-export default ImgProjectMotion;
+export default ImgHomeMotion;

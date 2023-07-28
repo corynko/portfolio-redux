@@ -44,16 +44,7 @@ function ImgHomeMotion() {
       variants={imgVariants}
       initial="start"
       animate="finished"
-    >
-      {/* <img
-        src={homeImg}
-        alt="Evergroove Studio as shot by Ethan Kotel"
-        className="coverImg"
-        variants={imgVariants}
-        initial={"start"}
-        animate={"finished"}
-      ></img> */}
-    </motion.div>
+    />
   );
 }
 

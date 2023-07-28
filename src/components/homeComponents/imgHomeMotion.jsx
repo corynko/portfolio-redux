@@ -43,7 +43,7 @@ function ImgHomeMotion() {
       variants={imgVariants}
       initial="start"
       animate="finished"
-    ></motion.div>
+    />
   );
 }
 

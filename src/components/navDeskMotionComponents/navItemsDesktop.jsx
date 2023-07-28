@@ -41,7 +41,7 @@ export default function NavItemsDesktop() {
           textAlign: "center",
         }}
       >
-        <Link to="/">
+        <Link className="contactLink" to="/">
           <Button
             sx={{
               color: "#F5F5F5",
@@ -59,40 +59,42 @@ export default function NavItemsDesktop() {
             WHO I AM
           </Button>
         </Link>
-        <Button
-          sx={{
-            color: "#F5F5F5",
-            display: "flex",
-            fontFamily: "Raleway",
-            marginX: "1rem",
-            fontWeight: 300,
-            maxHeight: "100px",
-            whiteSpace: "nowrap",
-            flexGrow: 1,
-            borderRadius: "20%",
-          }}
-          href="/portfolio"
-          fullWidth={true}
-        >
-          WHAT I DO
-        </Button>
-        <Button
-          sx={{
-            color: "#F5F5F5",
-            display: "flex",
-            fontFamily: "Raleway",
-            marginX: "1rem",
-            fontWeight: 300,
-            maxHeight: "100px",
-            whiteSpace: "nowrap",
-            flexGrow: 1,
-            borderRadius: "20%",
-          }}
-          href="/contact"
-          fullWidth={true}
-        >
-          CONTACT ME
-        </Button>
+        <Link className="contactLink" to="/projects">
+          <Button
+            sx={{
+              color: "#F5F5F5",
+              display: "flex",
+              fontFamily: "Raleway",
+              marginX: "1rem",
+              fontWeight: 300,
+              maxHeight: "100px",
+              whiteSpace: "nowrap",
+              flexGrow: 1,
+              borderRadius: "20%",
+            }}
+            fullWidth={true}
+          >
+            WHAT I DO
+          </Button>
+        </Link>
+        <Link className="contactLink" to="/contact">
+          <Button
+            sx={{
+              color: "#F5F5F5",
+              display: "flex",
+              fontFamily: "Raleway",
+              marginX: "1rem",
+              fontWeight: 300,
+              maxHeight: "100px",
+              whiteSpace: "nowrap",
+              flexGrow: 1,
+              borderRadius: "20%",
+            }}
+            fullWidth={true}
+          >
+            CONTACT ME
+          </Button>
+        </Link>
         <Button
           sx={{
             color: "#F5F5F5",
