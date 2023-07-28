@@ -1,8 +1,6 @@
-import React from "react";
 import { animate, delay, motion } from "framer-motion";
-import homeImg from "../../assets/images/EKP_EGATM-28.jpg";
 
-function ImgHomeMotion() {
+function ImgContactMotion() {
   //speeds up animation on mobile
   let imgVariants = {
     start: { opacity: 0, stroke: "#F5F5F5", borderRadius: "100%" },
@@ -48,4 +46,4 @@ function ImgHomeMotion() {
   );
 }
 
-export default ImgHomeMotion;
+export default ImgContactMotion;

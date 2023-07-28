@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import NavDrawerMobile from "./navDrawerMobile";
 import { animate, motion } from "framer-motion";

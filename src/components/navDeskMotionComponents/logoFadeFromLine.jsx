@@ -1,6 +1,4 @@
-import React from "react";
 import { animate, delay, motion } from "framer-motion";
-import { Margin } from "@mui/icons-material";
 
 function LogoFadeFromLine() {
   let pathVariants = {
