@@ -50,7 +50,7 @@ function NavDrawerMobile() {
           flexGrow: 1,
           borderRadius: "20%",
         }}
-        href="/"
+        href="https://ethankotel.dev/"
         fullWidth={true}
       >
         WHO I AM
@@ -69,7 +69,7 @@ function NavDrawerMobile() {
           flexGrow: 1,
           borderRadius: "20%",
         }}
-        href="/projects"
+        href="https://ethankotel.dev/projects"
         fullWidth={true}
       >
         WHAT I DO
@@ -88,7 +88,7 @@ function NavDrawerMobile() {
           flexGrow: 1,
           borderRadius: "20%",
         }}
-        href="/contact"
+        href="https://ethankotel.dev/contact"
         fullWidth={true}
       >
         CONTACT ME
