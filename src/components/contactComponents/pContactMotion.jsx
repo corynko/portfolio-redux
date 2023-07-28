@@ -1,10 +1,7 @@
-import React from "react";
 import { animate, delay, motion, stagger } from "framer-motion";
 import Box from "@mui/material/Box";
-import EKAvatar from "../../assets/images/EKP_self_portrait.jpg";
 
-function PHomeMotion() {
-  //speeds up all animations on mobile
+function PContactMotion() {
   let divTopVariants = {
     start: { opacity: 0, stroke: "#F5F5F5" },
     finished: {
@@ -108,7 +105,7 @@ function PHomeMotion() {
         <motion.h3 className="pageH3" variants={h3Variants}>
           I'm looking forward to working with you.
         </motion.h3>
-        <motion.h4 className="pageH4" variants={h4Variants}>
+        <motion.h4 className="contactH4" variants={h4Variants}>
           connect with me at the links below, or submit a form and I will reach
           out as soon as I can.
         </motion.h4>
@@ -173,4 +170,4 @@ function PHomeMotion() {
   );
 }
 
-export default PHomeMotion;
+export default PContactMotion;

@@ -1,4 +1,3 @@
-import React from "react";
 import { animate, delay, motion } from "framer-motion";
 import Box from "@mui/material/Box";
 

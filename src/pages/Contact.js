@@ -1,4 +1,3 @@
-import React from "react";
 import H1ContactDrawMotion from "../components/contactComponents/h1ContactFadeFromLine";
 import ImgContactMotion from "../components/contactComponents/imgContactMotion";
 import PContactMotion from "../components/contactComponents/pContactMotion";

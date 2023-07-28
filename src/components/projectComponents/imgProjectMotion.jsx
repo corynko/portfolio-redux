@@ -1,6 +1,4 @@
-import React from "react";
 import { animate, delay, motion } from "framer-motion";
-import homeImg from "../../assets/images/EKP_EGATM-28.jpg";
 
 function ImgHomeMotion() {
   //speeds up animation on mobile

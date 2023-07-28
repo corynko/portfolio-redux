@@ -5,7 +5,6 @@ import CardProjectMotion from "./cardProjectMotion";
 import H1ProjectDrawMotion from "./h1ProjectFadeFromLine";
 
 function PHomeMotion() {
-  //speeds up all animations on mobile
   let divTopVariants = {
     start: { opacity: 0, stroke: "#F5F5F5" },
     finished: {
@@ -63,7 +62,9 @@ function PHomeMotion() {
             contact me when you're ready
           </Link>
         </motion.h4>
+
         <CardProjectMotion />
+
         <div style={{ marginTop: "40px" }}></div>
       </motion.div>
     </Box>

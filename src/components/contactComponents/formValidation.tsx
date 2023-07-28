@@ -5,8 +5,6 @@ const PostContactForm = async (
   successCallback: any,
   errorCallback: any
 ) => {
-  // do stuff
-  // if successful
   if (true) successCallback();
   else errorCallback();
 };

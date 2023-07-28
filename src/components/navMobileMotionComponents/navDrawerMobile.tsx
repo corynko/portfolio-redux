@@ -2,7 +2,6 @@ import MenuIcon from "@mui/icons-material/Menu";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Button";
-import Link from "@mui/material/Link";
 import React, { useState } from "react";
 
 function NavDrawerMobile() {
@@ -136,14 +135,6 @@ function NavDrawerMobile() {
   );
 
   return (
-    // <IconButton
-    //   size="large"
-    //   aria-label="account of current user"
-    //   aria-controls="menu-appbar"
-    //   aria-haspopup="true"
-    //   onClick={toggleDrawer}
-    //   color="inherit"
-    // >
     <div>
       <Button onClick={toggleDrawer(true)}>
         <MenuIcon className="menuIcon" />
@@ -161,11 +152,6 @@ function NavDrawerMobile() {
         }}
       >
         {list}
-        {/* anchor="right"
-      variant="temporary"
-      open={open}
-      onClose={setOpenDrawer(false)}
-      onOpen={setOpenDrawer(true)} */}
       </SwipeableDrawer>
     </div>
   );

@@ -1,7 +1,6 @@
 import { animate, delay, motion } from "framer-motion";
 
 function H1ProjectDrawMotion() {
-  //speeds up animation on mobile
   let h1Variants = {
     start: { opacity: 0, stroke: "#F5F5F5" },
     finished: {
@@ -24,7 +23,7 @@ function H1ProjectDrawMotion() {
         animate={"finished"}
         className="pageH1"
       >
-        HERE'S SOME OF MY WORK
+        SELECTED PROJECTS
       </motion.h1>
     </div>
   );

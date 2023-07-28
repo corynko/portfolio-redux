@@ -1,18 +1,17 @@
-import React from "react";
 import { animate, delay, motion } from "framer-motion";
 import Box from "@mui/material/Box";
 import EKAvatar from "../../assets/images/EKP_self_portrait.jpg";
 
 function PHomeMotion() {
-  //speeds up all animations on mobile
   let divTopVariants = {
-    start: { opacity: 0 },
+    start: { opacity: 0, stroke: "#F5F5F5" },
     finished: {
       opacity: 1,
+      fill: "#F5F5F5",
       transition: {
-        duration: 1.5,
+        duration: 1.3,
         ease: "easeInOut",
-        delay: 5,
+        delay: 1.9,
       },
     },
   };
@@ -22,9 +21,9 @@ function PHomeMotion() {
     finished: {
       opacity: 1,
       transition: {
-        duration: 1.5,
+        duration: 1.8,
         ease: "easeInOut",
-        delay: 5.4,
+        delay: 2.3,
       },
     },
   };
@@ -34,9 +33,9 @@ function PHomeMotion() {
     finished: {
       opacity: 1,
       transition: {
-        duration: 1.5,
+        duration: 1.8,
         ease: "easeInOut",
-        delay: 5.6,
+        delay: 2.5,
       },
     },
   };
@@ -47,12 +46,12 @@ function PHomeMotion() {
       opacity: 1,
       borderRadius: "0 60%",
       transition: {
-        duration: 2,
-        delay: 5,
+        duration: 1.5,
         ease: "easeInOut",
+        delay: 2.2,
         borderRadius: {
-          duration: 2,
-          delay: 4.6,
+          duration: 1.5,
+          delay: 1.9,
         },
       },
     },
