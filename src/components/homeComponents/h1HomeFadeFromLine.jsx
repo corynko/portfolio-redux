@@ -16,6 +16,18 @@ function H1HomeDrawMotion() {
     },
   };
 
+  let h3Variants = {
+    start: { opacity: 0 },
+    finished: {
+      opacity: 1,
+      transition: {
+        duration: 1.5,
+        ease: "easeInOut",
+        delay: 5.2,
+      },
+    },
+  };
+
   const isMobile = window.innerWidth < 1080;
   if (isMobile) {
     h1Variants = {
@@ -46,10 +58,21 @@ function H1HomeDrawMotion() {
         },
       },
     };
+    h3Variants = {
+      start: { opacity: 0 },
+      finished: {
+        opacity: 1,
+        transition: {
+          duration: 1.5,
+          ease: "easeInOut",
+          delay: 1.8,
+        },
+      },
+    };
   }
 
   return (
-    <div className="center">
+    <div className="center homeH1H3">
       {/* DENVER */}
       <motion.h1
         variants={h1Variants}
@@ -59,6 +82,14 @@ function H1HomeDrawMotion() {
       >
         DENVER BASED FULL STACK DEVELOPER
       </motion.h1>
+      <motion.h3
+        className="pageH3"
+        variants={h3Variants}
+        initial="start"
+        animate="finished"
+      >
+        Hi, my name is Ethan Kotel.{" "}
+      </motion.h3>
     </div>
   );
 }

@@ -1,6 +1,5 @@
 import React from "react";
 import { animate, delay, motion } from "framer-motion";
-import homeImg from "../../assets/images/EKP_EGATM-28.jpg";
 
 function ImgHomeMotion() {
   //speeds up animation on mobile
@@ -44,16 +43,7 @@ function ImgHomeMotion() {
       variants={imgVariants}
       initial="start"
       animate="finished"
-    >
-      {/* <img
-        src={homeImg}
-        alt="Evergroove Studio as shot by Ethan Kotel"
-        className="coverImg"
-        variants={imgVariants}
-        initial={"start"}
-        animate={"finished"}
-      ></img> */}
-    </motion.div>
+    ></motion.div>
   );
 }
 

@@ -17,18 +17,6 @@ function PHomeMotion() {
     },
   };
 
-  let h3Variants = {
-    start: { opacity: 0 },
-    finished: {
-      opacity: 1,
-      transition: {
-        duration: 1.5,
-        ease: "easeInOut",
-        delay: 5.2,
-      },
-    },
-  };
-
   let h4Variants = {
     start: { opacity: 0 },
     finished: {
@@ -85,18 +73,6 @@ function PHomeMotion() {
       },
     };
 
-    h3Variants = {
-      start: { opacity: 0 },
-      finished: {
-        opacity: 1,
-        transition: {
-          duration: 1.5,
-          ease: "easeInOut",
-          delay: 1.8,
-        },
-      },
-    };
-
     h4Variants = {
       start: { opacity: 0 },
       finished: {
@@ -142,7 +118,7 @@ function PHomeMotion() {
   return (
     <Box className="center homeImgBox" display={"flex"}>
       <motion.div
-        variants={h3Variants}
+        variants={h4Variants}
         initial="start"
         animate="finished"
         className="centerDiv"
@@ -159,9 +135,6 @@ function PHomeMotion() {
         initial={"start"}
         animate={"finished"}
       >
-        <motion.h3 className="pageH3" variants={h3Variants}>
-          Hi, my name is Ethan Kotel.{" "}
-        </motion.h3>
         <motion.h4 className="pageH4" variants={h4Variants}>
           I am a Colorado based developer, musician, and photographer.
         </motion.h4>

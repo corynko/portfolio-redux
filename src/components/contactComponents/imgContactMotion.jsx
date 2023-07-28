@@ -9,15 +9,15 @@ function ImgHomeMotion() {
     finished: {
       opacity: 1,
       fill: "#F5F5F5",
-      borderRadius: 0,
+      borderRadius: ["100%", "40%", "30%", "20%", 0],
       transition: {
-        duration: 1.5,
+        duration: 1,
         ease: "easeOut",
-        delay: 4.5,
+        delay: 0.2,
 
         borderRadius: {
-          delay: 3.8,
-          duration: 2,
+          duration: 0.4,
+          ease: "linear",
         },
       },
     },
