@@ -52,30 +52,6 @@ const pathVariants = {
 //   },
 // };
 
-const divVariantsLeft = {
-  start: { x: "100%" },
-  finished: {
-    x: ["100%", "80%", "50%", "20%", "-100%"],
-    opacity: [1, 1, 1, 0.75, 0],
-    transition: {
-      duration: 1.75,
-      ease: "linear",
-      delay: 1.25,
-    },
-  },
-};
-const divVariantsRight = {
-  start: { x: "40%" },
-  finished: {
-    x: ["40%", "60%", "80%", "100%", "220%"],
-    opacity: [1, 1, 1, 0.75, 0],
-    transition: {
-      duration: 1.75,
-      ease: "linear",
-      delay: 1.25,
-    },
-  },
-};
 // const containerTimeOut = {
 //   start: {},
 //   finished: {
@@ -99,6 +75,47 @@ function LetteringMotion() {
       start: { opacity: 1 },
       finished: {
         opacity: 1,
+      },
+    };
+  }
+
+  let divVariantsLeft = {
+    start: { x: "100%" },
+    finished: {
+      x: ["100%", "80%", "50%", "20%", "-100%"],
+      opacity: [1, 1, 1, 0.75, 0],
+      transition: {
+        duration: 1.75,
+        ease: "linear",
+        delay: 1.25,
+      },
+    },
+  };
+  let divVariantsRight = {
+    start: { x: "200%" },
+    finished: {
+      x: ["200%", "280%", "330%", "400%", "620%"],
+      opacity: [1, 1, 1, 0.75, 0],
+      transition: {
+        duration: 1.75,
+        ease: "linear",
+        delay: 1.25,
+      },
+    },
+  };
+
+  const isLarge = window.innerWidth > 2000;
+  if (isLarge) {
+    divVariantsRight = {
+      start: { x: "60%" },
+      finished: {
+        x: ["60%", "150%", "200%", "240%", "420%"],
+        opacity: [1, 1, 1, 0.75, 0],
+        transition: {
+          duration: 1.75,
+          ease: "linear",
+          delay: 1.25,
+        },
       },
     };
   }

@@ -29,9 +29,9 @@ const pathVariants = {
 };
 
 const divVariants = {
-  start: { x: "225%" },
+  start: { x: "300%" },
   finished: {
-    x: ["225%", "155%", "125%", "95%", "-500%"],
+    x: ["300%", "155%", "125%", "95%", "-500%"],
     opacity: [1, 1, 1, 0.6, 0],
     transition: {
       duration: 1.4,
