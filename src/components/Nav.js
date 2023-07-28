@@ -30,7 +30,7 @@ function ResponsiveAppBar() {
   // };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" className="appbar">
       <Toolbar className="toolbar" disableGutters>
         <Box
           sx={{

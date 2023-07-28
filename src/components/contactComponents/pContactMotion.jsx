@@ -1,18 +1,19 @@
 import React from "react";
-import { animate, delay, motion } from "framer-motion";
+import { animate, delay, motion, stagger } from "framer-motion";
 import Box from "@mui/material/Box";
 import EKAvatar from "../../assets/images/EKP_self_portrait.jpg";
 
 function PHomeMotion() {
   //speeds up all animations on mobile
   let divTopVariants = {
-    start: { opacity: 0 },
+    start: { opacity: 0, stroke: "#F5F5F5" },
     finished: {
       opacity: 1,
+      fill: "#F5F5F5",
       transition: {
-        duration: 1.5,
+        duration: 1,
         ease: "easeInOut",
-        delay: 5,
+        delay: 1.6,
       },
     },
   };
@@ -24,7 +25,7 @@ function PHomeMotion() {
       transition: {
         duration: 1.5,
         ease: "easeInOut",
-        delay: 5.2,
+        delay: 1.8,
       },
     },
   };
@@ -36,157 +37,137 @@ function PHomeMotion() {
       transition: {
         duration: 1.5,
         ease: "easeInOut",
-        delay: 5.4,
+        delay: 2,
       },
     },
   };
 
-  let pVariants = {
+  let linkVariants = {
     start: { opacity: 0 },
     finished: {
       opacity: 1,
       transition: {
         duration: 1.5,
         ease: "easeInOut",
-        delay: 5.6,
+        delay: 2.2,
       },
     },
   };
-
-  let imgVariants = {
-    start: { opacity: 0, borderRadius: "0 200%" },
+  let linkVariants2 = {
+    start: { opacity: 0 },
     finished: {
       opacity: 1,
-      borderRadius: "0 60%",
       transition: {
-        duration: 2,
-        delay: 5,
+        duration: 1.5,
         ease: "easeInOut",
-        borderRadius: {
-          duration: 2,
-          delay: 4.6,
-        },
+        delay: 2.5,
       },
     },
   };
-
-  const isMobile = window.innerWidth < 1500;
-  if (isMobile) {
-    divTopVariants = {
-      start: { opacity: 0, stroke: "#F5F5F5" },
-      finished: {
-        opacity: 1,
-        fill: "#F5F5F5",
-        transition: {
-          duration: 1,
-          ease: "easeInOut",
-          delay: 1.6,
-        },
+  let linkVariants3 = {
+    start: { opacity: 0 },
+    finished: {
+      opacity: 1,
+      transition: {
+        duration: 1.5,
+        ease: "easeInOut",
+        delay: 2.8,
       },
-    };
-
-    h3Variants = {
-      start: { opacity: 0 },
-      finished: {
-        opacity: 1,
-        transition: {
-          duration: 1.5,
-          ease: "easeInOut",
-          delay: 1.8,
-        },
+    },
+  };
+  let linkVariants4 = {
+    start: { opacity: 0 },
+    finished: {
+      opacity: 1,
+      transition: {
+        duration: 1.5,
+        ease: "easeInOut",
+        delay: 3.1,
       },
-    };
-
-    h4Variants = {
-      start: { opacity: 0 },
-      finished: {
-        opacity: 1,
-        transition: {
-          duration: 1.5,
-          ease: "easeInOut",
-          delay: 2,
-        },
+    },
+  };
+  let linkVariants5 = {
+    start: { opacity: 0 },
+    finished: {
+      opacity: 1,
+      transition: {
+        duration: 1.5,
+        ease: "easeInOut",
+        delay: 3.4,
       },
-    };
-
-    pVariants = {
-      start: { opacity: 0 },
-      finished: {
-        opacity: 1,
-        transition: {
-          duration: 1.5,
-          ease: "easeInOut",
-          delay: 2.2,
-        },
-      },
-    };
-
-    imgVariants = {
-      start: { opacity: 0, borderRadius: "0 200%" },
-      finished: {
-        opacity: 1,
-        borderRadius: "0 60%",
-        transition: {
-          duration: 1.5,
-          ease: "easeInOut",
-          delay: 1.9,
-          borderRadius: {
-            duration: 1.5,
-            delay: 1.6,
-          },
-        },
-      },
-    };
-  }
+    },
+  };
 
   return (
     <Box className="center homeImgBox" display={"flex"}>
-      <motion.div
-        variants={h3Variants}
-        initial="start"
-        animate="finished"
-        className="centerDiv"
-      >
-        <motion.img
-          className="EKAvatar"
-          src={EKAvatar}
-          alt="Ethan Kotel Headshot"
-          variants={imgVariants}
-        />
-      </motion.div>
       <motion.div
         variants={divTopVariants}
         initial={"start"}
         animate={"finished"}
       >
         <motion.h3 className="pageH3" variants={h3Variants}>
-          Hi, my name is Ethan Kotel.{" "}
+          I'm looking forward to working with you.
         </motion.h3>
         <motion.h4 className="pageH4" variants={h4Variants}>
-          I am a Colorado based developer, musician, and photographer.
+          connect with me at the links below, or submit a form and I will reach
+          out as soon as I can.
         </motion.h4>
-        <motion.p className="pageBodyText" variants={pVariants}>
-          My aim at all times is to refresh stale workflows using an outsider's
-          perspective, without sacrificing form
-          <span className="bold"> nor </span>
-          functionality. Since starting my journey in full-stack web
-          development, I have made it a point to blend my keen eye for design
-          with my strong background in marketing, in order to deliver both
-          <span className="bold"> highly practical </span>and
-          <span className="bold"> highly attractive </span>solutions for any
-          industry.
-        </motion.p>
+        <div className="divWrapper">
+          <div className="linksDiv">
+            <motion.a
+              variants={linkVariants}
+              initial="start"
+              animate="finished"
+              className="pageBodyText contactLink"
+              href="https://github.com/corynko"
+              target="_blank"
+            >
+              GitHub
+            </motion.a>
+            <motion.a
+              variants={linkVariants2}
+              initial="start"
+              animate="finished"
+              className="pageBodyText contactLink"
+              href="https://www.linkedin.com/in/ethankotel/"
+              target="_blank"
+            >
+              LinkedIn
+            </motion.a>
+            <motion.a
+              variants={linkVariants3}
+              initial="start"
+              animate="finished"
+              className="pageBodyText contactLink"
+              href="https://u.pcloud.link/publink/show?code=XZC8iAVZfQ49iYgLe28WCvkJ2C0znLO6fMRk"
+              target="_blank"
+            >
+              Résumé
+            </motion.a>
+          </div>
+          <div className="linksDiv">
+            <motion.a
+              variants={linkVariants4}
+              initial="start"
+              animate="finished"
+              className="pageBodyText contactLink"
+              href="tel:+13039567556"
+            >
+              Phone
+            </motion.a>
+            <motion.a
+              variants={linkVariants5}
+              initial="start"
+              animate="finished"
+              className="pageBodyText contactLink"
+              href="mailto: info@ethankotel.com"
+              target="_blank"
+            >
+              Email
+            </motion.a>
+          </div>
+        </div>
         <div style={{ marginTop: "40px" }}></div>
-        <motion.p className="pageBodyText" variants={pVariants}>
-          I pride myself on being an extremely
-          <span className="bold"> efficient </span>and
-          <span className="bold"> adventurous </span>self-starter. I don't
-          believe in doing things the same way simply because "that's how it's
-          always been done," and am always looking for the next opportunity to
-          <span className="bold"> innovate routine workflows </span>with the
-          experience I've gained from working in numerous, widely varied
-          industries.
-        </motion.p>
       </motion.div>
     </Box>
   );
