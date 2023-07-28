@@ -2,7 +2,7 @@ import H1ProjectDrawMotion from "../components/projectComponents/h1ProjectFadeFr
 import ImgProjectMotion from "../components/projectComponents/imgProjectMotion";
 import PProjectMotion from "../components/projectComponents/pProjectMotion";
 
-export default function Contact() {
+export default function Projects() {
   return (
     <div>
       <ImgProjectMotion />
