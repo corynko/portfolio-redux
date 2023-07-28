@@ -18,6 +18,7 @@ body {
 .center {
   display: flex;
   justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
@@ -89,7 +90,7 @@ body {
 }
 
 .textWrapper {
-  max-width: 80%;
+  max-width: 60%;
   height: 800px;
   display: flex;
   flex-direction: column;
@@ -215,6 +216,12 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     padding: 15px;
+  }
+  .pageBodyText {
+    text-align: center;
+  }
+  .pageH4 {
+    text-align: center;
   }
 }
 

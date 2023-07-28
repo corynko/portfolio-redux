@@ -1,5 +1,6 @@
 import React from "react";
 import { animate, delay, motion } from "framer-motion";
+import { Margin } from "@mui/icons-material";
 
 function LogoFadeFromLine() {
   let pathVariants = {
@@ -46,7 +47,7 @@ function LogoFadeFromLine() {
   }
 
   return (
-    <div>
+    <div style={{ margin: "10px" }}>
       <motion.svg
         version="1.0"
         id="Layer_1"
