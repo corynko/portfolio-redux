@@ -8,8 +8,6 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import "@fontsource/public-sans";
 
-//material imports
-
 //import page links
 import Nav from "./components/Nav";
 import Home from "./pages/Home";
@@ -156,10 +154,10 @@ export default function App() {
         <div className="container">
           <Nav />
           <Routes>
-            <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/*" element={<Home />} />
           </Routes>
         </div>
       </ThemeProvider>
