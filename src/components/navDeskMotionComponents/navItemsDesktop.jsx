@@ -38,13 +38,9 @@ export default function NavItemsDesktop() {
         sx={{
           display: { xs: "none", lg: "flex" },
           textAlign: "center",
-          // flexWrap: "wrap",
         }}
       >
-        {/* {pages.map((page) => ( */}
         <Button
-          //   key={page}
-          // onClick={handleCloseNavMenu}
           sx={{
             color: "#F5F5F5",
             display: "flex",
@@ -59,12 +55,9 @@ export default function NavItemsDesktop() {
           href="/"
           fullWidth={true}
         >
-          {/* {page} */}
           WHO I AM
         </Button>
         <Button
-          //   key={page}
-          // onClick={handleCloseNavMenu}
           sx={{
             color: "#F5F5F5",
             display: "flex",
@@ -82,8 +75,6 @@ export default function NavItemsDesktop() {
           WHAT I DO
         </Button>
         <Button
-          //   key={page}
-          // onClick={handleCloseNavMenu}
           sx={{
             color: "#F5F5F5",
             display: "flex",
@@ -101,8 +92,6 @@ export default function NavItemsDesktop() {
           CONTACT ME
         </Button>
         <Button
-          //   key={page}
-          // onClick={handleCloseNavMenu}
           sx={{
             color: "#F5F5F5",
             display: "flex",
@@ -120,8 +109,6 @@ export default function NavItemsDesktop() {
           PHOTOS
         </Button>
         <Button
-          //   key={page}
-          // onClick={handleCloseNavMenu}
           sx={{
             color: "#F5F5F5",
             display: "flex",
@@ -137,7 +124,6 @@ export default function NavItemsDesktop() {
         >
           AUDIO
         </Button>
-        {/* ))} */}
       </Box>
     </motion.div>
   );

@@ -115,11 +115,9 @@ body {
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700&family=Rubik:wght@300;400;500;600;700;800&display=swap");
 
 @media screen and (max-width: 1500px) {
-  .coverImg {
-    width: 1500px;
-    min-height: 100%;
-    left: 0;
-    right: 0;
+  .homeCoverImg {
+    size: 115%;
+    margin-top: 100px;
   }
   .pageBodyText {
     max-width: 80%;
@@ -128,7 +126,7 @@ body {
   .textWrapper {
     max-width: 80%;
     height: 800px;
-    margin-top: 150px;
+    margin-top: 100px;
   }
   .pageDiv {
     margin-top: 0;
@@ -148,13 +146,6 @@ body {
 }
 
 @media screen and (max-width: 1000px) {
-  .coverImg {
-    width: auto;
-    min-height: 100%;
-    margin-top: 50px;
-    left: auto;
-    right: auto;
-  }
   .pageBodyText {
     max-width: 100%;
     padding: 0 25px;
@@ -165,7 +156,7 @@ body {
   }
   .textWrapper {
     max-width: 100%;
-    margin-top: 100px;
+    margin-top: 50px;
     height: fit-content;
   }
 }
