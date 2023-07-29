@@ -2,7 +2,6 @@ import MenuIcon from "@mui/icons-material/Menu";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Button";
-import NavLink from "react-router-dom";
 import React, { useState } from "react";
 
 function NavDrawerMobile() {
@@ -38,7 +37,7 @@ function NavDrawerMobile() {
       onClick={toggleDrawer(true)}
       onKeyDown={toggleDrawer(true)}
     >
-      <NavLink
+      <Button
         onClick={() => setOpenDrawer(false)}
         sx={{
           color: "#F5F5F5",
@@ -51,13 +50,13 @@ function NavDrawerMobile() {
           flexGrow: 1,
           borderRadius: "20%",
         }}
-        to="/"
+        href="/"
         fullWidth={true}
       >
         WHO I AM
-      </NavLink>
+      </Button>
 
-      <NavLink
+      <Button
         onClick={() => setOpenDrawer(false)}
         sx={{
           color: "#F5F5F5",
@@ -70,13 +69,13 @@ function NavDrawerMobile() {
           flexGrow: 1,
           borderRadius: "20%",
         }}
-        to="/projects"
+        href="/projects"
         fullWidth={true}
       >
         WHAT I DO
-      </NavLink>
+      </Button>
 
-      <NavLink
+      <Button
         onClick={() => setOpenDrawer(false)}
         sx={{
           color: "#F5F5F5",
@@ -89,11 +88,11 @@ function NavDrawerMobile() {
           flexGrow: 1,
           borderRadius: "20%",
         }}
-        to="/contact"
+        href="/contact"
         fullWidth={true}
       >
         CONTACT ME
-      </NavLink>
+      </Button>
 
       <Button
         onClick={() => setOpenDrawer(false)}
