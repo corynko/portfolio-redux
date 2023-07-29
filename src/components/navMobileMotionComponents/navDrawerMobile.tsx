@@ -57,7 +57,9 @@ function NavDrawerMobile() {
       </Button>
 
       <Button
-        onClick={() => setOpenDrawer(false)}
+        onClick={() => {
+          setOpenDrawer(false), window.open("https://ethankotel.dev/projects");
+        }}
         sx={{
           color: "#F5F5F5",
           display: "flex",
@@ -69,7 +71,7 @@ function NavDrawerMobile() {
           flexGrow: 1,
           borderRadius: "20%",
         }}
-        href="https://ethankotel.dev/projects"
+        // href=""
         fullWidth={true}
       >
         WHAT I DO
