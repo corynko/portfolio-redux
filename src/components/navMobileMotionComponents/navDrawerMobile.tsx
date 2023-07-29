@@ -2,7 +2,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import Button from "@mui/material/Button";
 import Box from "@mui/material/Button";
-import NavLink from "@mui/material/NavLink";
+import NavLink from "react-router-dom";
 import React, { useState } from "react";
 
 function NavDrawerMobile() {
