@@ -158,14 +158,16 @@ body {
   color: var(--lightest);
 }
 
-.contactLink {
+.contactLink,
+.mobileLink {
   text-decoration: none;
   font-style: none;
   color: var(--medium);
   transition: all 0.4s ease-in-out;
 }
 
-.contactLink:hover {
+.contactLink:hover,
+.mobileLink:hover {
   color: var(--lighter);
   transition: all 0.4s ease-in-out;
 }

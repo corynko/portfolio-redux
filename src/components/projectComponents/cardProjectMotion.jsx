@@ -6,6 +6,13 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { animate, delay, motion } from "framer-motion";
 
+import smBackend from "../../assets/images/projects/smbackend_scrnsht.jpg";
+import codeGauntlet from "../../assets/images/projects/comingsoon.jpg";
+import workoutWizard from "../../assets/images/projects/workout_wizard_scrnsht.jpg";
+import portfolio from "../../assets/images/projects/portfolio_scrnsht.jpg";
+import readmeGen from "../../assets/images/projects/README_generator_scrnsht.jpg";
+import nhlFanPlan from "../../assets/images/projects/nhl_fan_plan_scrnsht.jpg";
+
 export default function ImgMediaCard() {
   let divVariants = {
     start: { opacity: 0 },
@@ -84,7 +91,7 @@ export default function ImgMediaCard() {
               alt="Code Gauntlet screen shot"
               className="projectImg"
               s
-              src={require("../../assets/images/projects/comingsoon.jpg")}
+              src={codeGauntlet}
             />
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
@@ -120,7 +127,7 @@ export default function ImgMediaCard() {
               component="img"
               alt="Workout Wizard screen shot"
               className="projectImg"
-              src={require("../../assets/images/projects/workout_wizard_scrnsht.jpg")}
+              src={workoutWizard}
             />
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
@@ -156,7 +163,7 @@ export default function ImgMediaCard() {
               component="img"
               alt="portfolio screen shot"
               className="projectImg"
-              src={require("../../assets/images/projects/portfolio_scrnsht.jpg")}
+              src={portfolio}
             />
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
@@ -193,7 +200,7 @@ export default function ImgMediaCard() {
               component="img"
               alt="readme generator screen shot"
               className="projectImg"
-              src={require("../../assets/images/projects/README_generator_scrnsht.jpg")}
+              src={readmeGen}
             />
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
@@ -221,7 +228,7 @@ export default function ImgMediaCard() {
               component="img"
               alt="NHL Fan Plan screen shot"
               className="projectImg"
-              src={require("../../assets/images/projects/nhl_fan_plan_scrnsht.jpg")}
+              src={nhlFanPlan}
             />
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
@@ -256,7 +263,7 @@ export default function ImgMediaCard() {
               component="img"
               alt="Social Media Backend screen shot"
               className="projectImg"
-              src={require("../../assets/images/projects/smbackend_scrnsht.jpg")}
+              src={smBackend}
             />
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">

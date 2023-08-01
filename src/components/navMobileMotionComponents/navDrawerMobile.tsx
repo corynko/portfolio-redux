@@ -1,7 +1,8 @@
 import MenuIcon from "@mui/icons-material/Menu";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import Button from "@mui/material/Button";
-import Box from "@mui/material/Button";
+import Box from "@mui/material/Box";
+import { Link } from "react-router-dom";
 import React, { useState } from "react";
 
 function NavDrawerMobile() {
@@ -37,63 +38,65 @@ function NavDrawerMobile() {
       onClick={toggleDrawer(true)}
       onKeyDown={toggleDrawer(true)}
     >
-      <Button
-        onClick={() => setOpenDrawer(false)}
-        sx={{
-          color: "#F5F5F5",
-          display: "flex",
-          fontFamily: "Raleway",
-          marginX: "1rem",
-          marginY: 1,
-          fontWeight: 300,
-          maxHeight: "100px",
-          flexGrow: 1,
-          borderRadius: "20%",
-        }}
-        href="/"
-        fullWidth={true}
-      >
-        WHO I AM
-      </Button>
+      <Link to="/" className="mobileLink">
+        <Button
+          onClick={() => setOpenDrawer(false)}
+          sx={{
+            color: "#F5F5F5",
+            display: "flex",
+            fontFamily: "Raleway",
+            marginX: "1rem",
+            marginY: 1,
+            fontWeight: 300,
+            maxHeight: "100px",
+            flexGrow: 1,
+            borderRadius: "20%",
+          }}
+          fullWidth={true}
+        >
+          WHO I AM
+        </Button>
+      </Link>
 
-      <Button
-        onClick={() => setOpenDrawer(false)}
-        sx={{
-          color: "#F5F5F5",
-          display: "flex",
-          fontFamily: "Raleway",
-          marginX: "1rem",
-          marginY: 1,
-          fontWeight: 300,
-          maxHeight: "100px",
-          flexGrow: 1,
-          borderRadius: "20%",
-        }}
-        href="/projects"
-        fullWidth={true}
-      >
-        WHAT I DO
-      </Button>
+      <Link to="/projects" className="mobileLink">
+        <Button
+          onClick={() => setOpenDrawer(false)}
+          sx={{
+            color: "#F5F5F5",
+            display: "flex",
+            fontFamily: "Raleway",
+            marginX: "1rem",
+            marginY: 1,
+            fontWeight: 300,
+            maxHeight: "100px",
+            flexGrow: 1,
+            borderRadius: "20%",
+          }}
+          fullWidth={true}
+        >
+          WHAT I DO
+        </Button>
+      </Link>
 
-      <Button
-        onClick={() => setOpenDrawer(false)}
-        sx={{
-          color: "#F5F5F5",
-          display: "flex",
-          fontFamily: "Raleway",
-          marginX: "1rem",
-          marginY: 1,
-          fontWeight: 300,
-          maxHeight: "100px",
-          flexGrow: 1,
-          borderRadius: "20%",
-        }}
-        href="/contact"
-        fullWidth={true}
-      >
-        CONTACT ME
-      </Button>
-
+      <Link to="/contact" className="mobileLink">
+        <Button
+          onClick={() => setOpenDrawer(false)}
+          sx={{
+            color: "#F5F5F5",
+            display: "flex",
+            fontFamily: "Raleway",
+            marginX: "1rem",
+            marginY: 1,
+            fontWeight: 300,
+            maxHeight: "100px",
+            flexGrow: 1,
+            borderRadius: "20%",
+          }}
+          fullWidth={true}
+        >
+          CONTACT ME
+        </Button>
+      </Link>
       <Button
         onClick={() => setOpenDrawer(false)}
         sx={{
