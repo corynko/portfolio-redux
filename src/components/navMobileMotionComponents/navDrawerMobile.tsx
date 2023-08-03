@@ -147,6 +147,9 @@ function NavDrawerMobile() {
         open={openDrawer}
         onOpen={toggleDrawer(true)}
         onClose={toggleDrawer(false)}
+        onClick={(event) => {
+          event.stopPropagation();
+        }}
         anchor="right"
         // variant="temporary"
         sx={{

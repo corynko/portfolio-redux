@@ -166,8 +166,7 @@ body {
   transition: all 0.4s ease-in-out;
 }
 
-.contactLink:hover,
-.mobileLink:hover {
+.contactLink:hover {
   color: var(--lighter);
   transition: all 0.4s ease-in-out;
 }
@@ -188,13 +187,7 @@ body {
   display: flex;
   padding: 15px;
 }
-.contactFormItem {
-  display: flex;
-  align-self: center;
-  justify-content: center;
-}
-
-#projectsContact {
+origin #projectsContact {
   margin-left: 0;
 }
 
