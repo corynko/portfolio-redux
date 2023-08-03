@@ -7,7 +7,7 @@ import Typography from "@mui/material/Typography";
 import { animate, delay, motion } from "framer-motion";
 
 import smBackend from "../../assets/images/projects/smbackend_scrnsht.jpg";
-import codeGauntlet from "../../assets/images/projects/comingsoon.jpg";
+import codeGauntlet from "../../assets/images/projects/code_gauntlet_scrnsht.jpg";
 import workoutWizard from "../../assets/images/projects/workout_wizard_scrnsht.jpg";
 import portfolio from "../../assets/images/projects/portfolio_scrnsht.jpg";
 import readmeGen from "../../assets/images/projects/README_generator_scrnsht.jpg";
@@ -113,7 +113,7 @@ export default function ImgMediaCard() {
               </Button>
               <Button
                 target="_blank"
-                href="https://github.com/corynko"
+                href="https://code-gauntlet-3e9a71d036dd.herokuapp.com/"
                 size="small"
               >
                 Live Site
