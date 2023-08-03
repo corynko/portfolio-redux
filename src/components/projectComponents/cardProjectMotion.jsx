@@ -100,7 +100,7 @@ export default function ImgMediaCard() {
               <Typography variant="body2" color="text.secondary">
                 A full stack application that tracks and stores user
                 information, utilizing React, MaterialUI, NodeJS, GraphQL and
-                Mongoose, built in 5 days
+                Mongoose, built in 5 days.
               </Typography>
             </CardContent>
             <CardActions className="center">
@@ -136,7 +136,7 @@ export default function ImgMediaCard() {
               <Typography variant="body2" color="text.secondary">
                 A full stack application that tracks user information and stores
                 it in an SQL database, utilizing MySQL, NodeJs and Handlebars,
-                built in 7 days
+                built in 7 days.
               </Typography>
             </CardContent>
             <CardActions className="center">
@@ -173,7 +173,7 @@ export default function ImgMediaCard() {
               <Typography variant="body2" color="text.secondary">
                 My portfolio is open source! If you see something you like, feel
                 free to clone the repo and experiment with it yourself. Built in
-                7 days
+                7 days.
               </Typography>
             </CardContent>
             <CardActions className="center">
@@ -210,7 +210,7 @@ export default function ImgMediaCard() {
               </Typography>
               <Typography variant="body2" color="text.secondary">
                 A command line interface built with NodeJS, Inquirer, and FS for
-                quickly generating README markup files
+                quickly generating README markup files.
               </Typography>
             </CardContent>
             <CardActions className="center">
@@ -239,7 +239,7 @@ export default function ImgMediaCard() {
               <Typography variant="body2" color="text.secondary">
                 A front-end-only experiment to shove as much storage
                 functionality as possible into a client-side application. Built
-                in 7 days
+                in 7 days.
               </Typography>
             </CardContent>
             <CardActions className="center">
@@ -274,7 +274,7 @@ export default function ImgMediaCard() {
               </Typography>
               <Typography variant="body2" color="text.secondary">
                 A working NoSQL database API, using NodeJS, MongoDB, and
-                Mongoose
+                Mongoose.
               </Typography>
             </CardContent>
             <CardActions className="center">
