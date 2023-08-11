@@ -1,4 +1,4 @@
-import { animate, delay, motion, stagger } from "framer-motion";
+import { motion } from "framer-motion";
 import Box from "@mui/material/Box";
 import { Link } from "react-router-dom";
 import CardProjectMotion from "./cardProjectMotion";

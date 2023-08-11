@@ -30,9 +30,6 @@ function NavDrawerMobile() {
       } else {
         setOpenDrawer(true);
       }
-      {
-        return;
-      }
     };
 
   const list = (

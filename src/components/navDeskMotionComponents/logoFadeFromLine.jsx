@@ -1,4 +1,4 @@
-import { animate, delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 function LogoFadeFromLine() {
   let pathVariants = {
@@ -45,8 +45,9 @@ function LogoFadeFromLine() {
   }
 
   return (
-    <div style={{ margin: "10px" }}>
+    <div style={{ margin: "10px" }} className="logoLinkDiv logoLink">
       <motion.svg
+        className="logoLink"
         version="1.0"
         id="Layer_1"
         xmlns="http://www.w3.org/2000/svg"
@@ -58,6 +59,7 @@ function LogoFadeFromLine() {
         display={{ xs: "none", md: "flex" }}
       >
         <motion.polygon
+          className="logoLink"
           stroke="#F5F5F5"
           fill={"none"}
           points="4.1,39.1 34.4,39.1 34.4,14.5 2.4,14.5 2.4,6.1 44.4,6.1 
@@ -66,6 +68,7 @@ function LogoFadeFromLine() {
         />
 
         <motion.path
+          className="logoLink"
           strokeLinecap="round"
           strokeLinejoin="round"
           fill={"none"}

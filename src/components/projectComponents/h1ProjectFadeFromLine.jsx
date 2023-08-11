@@ -1,4 +1,4 @@
-import { animate, delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 function H1ProjectDrawMotion() {
   let h1Variants = {

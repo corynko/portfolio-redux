@@ -1,7 +1,6 @@
 // non-animated imports
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
-import React, { useState } from "react";
 import AppBar from "@mui/material/AppBar";
 import NavItemsMobile from "./navMobileMotionComponents/navItemsMobile";
 
@@ -11,7 +10,7 @@ import RightCurlyMotion from "./navDeskMotionComponents/rightCurlyMotion";
 import LeftCurlyMotionFinal from "./navDeskMotionComponents/leftCurlyMotionFinal";
 import RightCurlyMotionFinal from "./navDeskMotionComponents/rightCurlyMotionFinal";
 import LetteringMotion from "./navDeskMotionComponents/letteringMotion";
-import LogoFadeDesktop from "./navDeskMotionComponents/logoTextFragment";
+import LogoFadeDesktop from "./navDeskMotionComponents/logoTextMotion";
 import NavItemsDesktop from "./navDeskMotionComponents/navItemsDesktop";
 import LogoFadeMobile from "./navMobileMotionComponents/logoFadeMobile";
 

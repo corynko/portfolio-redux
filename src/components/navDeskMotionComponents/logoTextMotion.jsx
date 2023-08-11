@@ -1,6 +1,6 @@
 import Typography from "@mui/material/Typography";
-import Link from "@mui/material/Link";
-import { animate, motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import Box from "@mui/material/Box";
 
 import LogoFadeFromLine from "./logoFadeFromLine";
@@ -43,30 +43,31 @@ export default function LogoText() {
           justifyContent: "space-between",
         }}
       >
-        <Link href="/">
+        <Link to="/">
           <LogoFadeFromLine />
         </Link>
-        <motion.div variants={divVariants} initial="start" animate="finished">
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="/"
-            sx={{
-              ml: 2,
-              mr: 2,
+        <Link to="/" className="logoTextLink">
+          <motion.div variants={divVariants} initial="start" animate="finished">
+            <Typography
+              variant="h6"
+              noWrap
+              component="a"
+              sx={{
+                ml: 2,
+                mr: 2,
 
-              fontFamily: "montserrat",
-              fontWeight: 500,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-              justifyContent: "flex-start",
-            }}
-          >
-            ETHAN KOTEL
-          </Typography>
-        </motion.div>
+                fontFamily: "montserrat",
+                fontWeight: 500,
+                letterSpacing: ".3rem",
+                color: "inherit",
+                textDecoration: "none",
+                justifyContent: "flex-start",
+              }}
+            >
+              ETHAN KOTEL
+            </Typography>
+          </motion.div>
+        </Link>
       </Box>
     </>
   );
