@@ -172,8 +172,8 @@ export default function ImgMediaCard() {
               </Typography>
               <Typography variant="body2" color="text.secondary">
                 My portfolio is open source! If you see something you like, feel
-                free to clone the repo and experiment with it yourself. Built in
-                7 days.
+                free to clone the repo and experiment with it yourself. Initial
+                build finished in 7 days.
               </Typography>
             </CardContent>
             <CardActions className="center">

@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://ethankotel.dev",
   "dependencies": {
+    "@emailjs/browser": "^3.11.0",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@fontsource/public-sans": "^5.0.5",
@@ -16,11 +17,13 @@
     "@types/node": "^20.4.5",
     "@types/react": "^18.2.17",
     "@types/react-dom": "^18.2.7",
+    "emailjs-com": "^3.2.0",
     "framer-motion": "^10.13.1",
     "react": "^17.0.0 || ^18.0.0",
     "react-dom": "^17.0.0 || ^18.0.0",
     "react-router-dom": "^6.14.2",
     "react-scripts": "5.0.1",
+    "sweetalert2": "^11.7.22",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

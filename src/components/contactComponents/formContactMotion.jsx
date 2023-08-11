@@ -48,7 +48,11 @@ function FormContactMotion() {
         animate="finished"
         className="contactForm center"
       >
-        <form onSubmit={handleFormSubmit} className="contactForm">
+        <form
+          onSubmit={handleFormSubmit}
+          className="contactForm"
+          id="contactForm"
+        >
           {inputFieldValues.map((inputFieldValue, index) => {
             return (
               <TextField
