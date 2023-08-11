@@ -190,7 +190,6 @@ button:active {
 }
 
 .contactForm {
-  justify-content: space-evenly;
   display: flex;
   padding: 15px;
 }
@@ -259,10 +258,7 @@ button:active {
     margin: 10px;
   }
   .contactForm {
-    display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    padding: 15px;
   }
   .pageBodyText {
     text-align: center;

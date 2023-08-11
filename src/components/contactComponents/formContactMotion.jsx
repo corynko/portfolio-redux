@@ -19,9 +19,14 @@ function FormContactMotion() {
 
   const inputFieldValues = [
     {
-      name: "fullName",
-      label: "Full Name",
-      id: "my-name",
+      name: "firstName",
+      label: "First Name",
+      id: "first-name",
+    },
+    {
+      name: "lastName",
+      label: "Last Name",
+      id: "last-name",
     },
     {
       name: "email",
