@@ -1,4 +1,4 @@
-import { animate, delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 function ImgContactMotion() {
   //speeds up animation on mobile

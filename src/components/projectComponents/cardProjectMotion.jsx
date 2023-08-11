@@ -4,7 +4,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
-import { animate, delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 import smBackend from "../../assets/images/projects/smbackend_scrnsht.jpg";
 import codeGauntlet from "../../assets/images/projects/code_gauntlet_scrnsht.jpg";

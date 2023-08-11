@@ -1,6 +1,6 @@
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
-import { animate, delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { useFormControls } from "./formValidation";
 
 function FormContactMotion() {

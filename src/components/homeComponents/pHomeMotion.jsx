@@ -1,4 +1,4 @@
-import { animate, delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import Box from "@mui/material/Box";
 import EKAvatar from "../../assets/images/EKP_self_portrait.jpg";
 

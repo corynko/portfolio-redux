@@ -183,10 +183,36 @@ button:active {
   color: var(--medium);
   transition: all 0.4s ease-in-out;
 }
-
 .contactLink:hover {
   color: var(--lighter);
   transition: all 0.4s ease-in-out;
+}
+
+.logoTextLink {
+  text-decoration: none;
+  color: var(--lightest);
+  transition: all 0.4s ease-in-out;
+}
+.logoLinkDiv:hover,
+.logoTextLink:hover {
+  .logoLink {
+    stroke: var(--medium);
+    fill: var(--medium);
+    transition: all 0.4s ease-in-out;
+  }
+  color: var(--medium);
+  transition: all 0.4s ease-in-out;
+}
+.logoLinkDiv:active,
+.logoTextLink:active {
+  .logoLink {
+    stroke: var(--darker);
+    fill: var(--darker);
+    transition: all 0.3s ease-out;
+  }
+  color: var(--darker);
+  scale: 95%;
+  transition: all 0.3s ease-out;
 }
 
 .linksDiv {

@@ -1,7 +1,7 @@
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
-import { animate, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 export default function NavItemsDesktop() {
   let divVariants = {

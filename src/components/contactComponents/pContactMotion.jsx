@@ -1,4 +1,4 @@
-import { animate, delay, motion, stagger } from "framer-motion";
+import { motion } from "framer-motion";
 import Box from "@mui/material/Box";
 
 function PContactMotion() {
