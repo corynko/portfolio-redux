@@ -16,6 +16,7 @@ button:active {
   font-size: 98%;
   opacity: 0.8;
 }
+
 .externalBtn:active {
   transition: 0.22s all ease-out;
   font-size: 98%;

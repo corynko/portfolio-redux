@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import React, { useState } from "react";
 
 function NavDrawerMobile() {
-  const [openDrawer, setOpenDrawer] = useState<boolean | false>(false);
+  const [openDrawer, setOpenDrawer] = useState(false);
 
   const toggleDrawer =
     (open: boolean) => (event: React.KeyboardEvent | React.MouseEvent) => {
@@ -25,19 +25,18 @@ function NavDrawerMobile() {
         setOpenDrawer(false);
       }
 
-      setOpenDrawer(true);
+      if (!open) {
+        setOpenDrawer(false);
+      } else {
+        setOpenDrawer(true);
+      }
       {
         return;
       }
     };
 
   const list = (
-    <Box
-      sx={{ flexDirection: "column" }}
-      role="presentation"
-      onClick={toggleDrawer(true)}
-      onKeyDown={toggleDrawer(true)}
-    >
+    <Box sx={{ flexDirection: "column" }} role="presentation">
       <Link to="/" className="mobileLink">
         <Button
           onClick={() => setOpenDrawer(false)}
@@ -151,7 +150,6 @@ function NavDrawerMobile() {
           event.stopPropagation();
         }}
         anchor="right"
-        // variant="temporary"
         sx={{
           display: { xs: "flex", md: "none" },
           flexDirection: "column",
