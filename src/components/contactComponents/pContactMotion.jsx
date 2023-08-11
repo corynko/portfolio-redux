@@ -116,6 +116,7 @@ function PContactMotion() {
               initial="start"
               animate="finished"
               className="pageBodyText contactLink"
+              id="contactLink"
               href="https://github.com/corynko"
               target="_blank"
             >
@@ -126,6 +127,7 @@ function PContactMotion() {
               initial="start"
               animate="finished"
               className="pageBodyText contactLink"
+              id="contactLink"
               href="https://www.linkedin.com/in/ethankotel/"
               target="_blank"
             >
@@ -136,6 +138,7 @@ function PContactMotion() {
               initial="start"
               animate="finished"
               className="pageBodyText contactLink"
+              id="contactLink"
               href="https://u.pcloud.link/publink/show?code=XZC8iAVZfQ49iYgLe28WCvkJ2C0znLO6fMRk"
               target="_blank"
             >
@@ -148,6 +151,7 @@ function PContactMotion() {
               initial="start"
               animate="finished"
               className="pageBodyText contactLink"
+              id="contactLink"
               href="tel:+13039567556"
             >
               Phone
@@ -157,6 +161,7 @@ function PContactMotion() {
               initial="start"
               animate="finished"
               className="pageBodyText contactLink"
+              id="contactLink"
               href="mailto: info@ethankotel.com"
               target="_blank"
             >

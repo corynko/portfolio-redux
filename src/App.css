@@ -12,9 +12,19 @@ body {
 }
 
 button:active {
-  transition: 0.2s all ease-out;
+  transition: 0.22s all ease-out;
   font-size: 98%;
-  border: 0.5px solid transparent;
+  opacity: 0.8;
+}
+.externalBtn:active {
+  transition: 0.22s all ease-out;
+  font-size: 98%;
+  opacity: 0.8;
+}
+
+#contactLink:active {
+  transition: 0.22s all ease-out;
+  font-size: 112%;
   opacity: 0.8;
 }
 
