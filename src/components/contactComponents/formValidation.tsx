@@ -16,7 +16,8 @@ const PostContactForm = async (
 };
 
 const initialFormValues = {
-  fullName: "",
+  firstName: "",
+  lastName: "",
   email: "",
   message: "",
   formSubmitted: false,
@@ -30,8 +31,11 @@ export const useFormControls = () => {
   const validate: any = (fieldValues = values) => {
     let temp: any = { ...errors };
 
-    if ("fullName" in fieldValues)
-      temp.fullName = fieldValues.fullName ? "" : "This field is required.";
+    if ("firstName" in fieldValues)
+      temp.firstName = fieldValues.firstName ? "" : "This field is required.";
+
+    if ("lastName" in fieldValues)
+      temp.lastName = fieldValues.lastName ? "" : "This field is required.";
 
     if ("email" in fieldValues) {
       temp.email = fieldValues.email ? "" : "This field is required.";
@@ -77,7 +81,8 @@ export const useFormControls = () => {
 
   const formIsValid = (fieldValues = values) => {
     const isValid =
-      fieldValues.fullName &&
+      fieldValues.firstName &&
+      fieldValues.lastName &&
       fieldValues.email &&
       fieldValues.message &&
       Object.values(errors).every((x) => x === "");
