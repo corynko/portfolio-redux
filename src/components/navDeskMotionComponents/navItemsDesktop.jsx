@@ -106,6 +106,7 @@ export default function NavItemsDesktop() {
             flexGrow: 1,
             borderRadius: "20%",
           }}
+          className="externalBtn"
           href="https://ethankotel.photos"
           fullWidth={true}
         >
@@ -122,6 +123,7 @@ export default function NavItemsDesktop() {
             flexGrow: 1,
             borderRadius: "20%",
           }}
+          className="externalBtn"
           href="https://www.ethankotel.com/"
           fullWidth={true}
         >
