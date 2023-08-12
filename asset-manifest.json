@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.bcb6d63e.css",
-    "main.js": "/static/js/main.1d914bde.js",
+    "main.css": "/static/css/main.8caf3e3b.css",
+    "main.js": "/static/js/main.3b8f109e.js",
     "static/js/787.a2cb61a6.chunk.js": "/static/js/787.a2cb61a6.chunk.js",
     "static/media/portfolio_scrnsht.jpg": "/static/media/portfolio_scrnsht.23fc818680cf3c9a2d47.jpg",
     "static/media/EKP_self_portrait.jpg": "/static/media/EKP_self_portrait.77a65978e705d7802590.jpg",
@@ -11,6 +11,7 @@
     "static/media/EKP_MOE-04.JPG": "/static/media/EKP_MOE-04.decc2464f1d33ce7941e.JPG",
     "static/media/nhl_fan_plan_scrnsht.jpg": "/static/media/nhl_fan_plan_scrnsht.f4567361c9222e557146.jpg",
     "static/media/smbackend_scrnsht.jpg": "/static/media/smbackend_scrnsht.9c62bc841a594babe96e.jpg",
+    "static/media/EK_Resume_081123_vert.pdf": "/static/media/EK_Resume_081123_vert.11d9148f443695626dcf.pdf",
     "static/media/workout_wizard_scrnsht.jpg": "/static/media/workout_wizard_scrnsht.3b3ffd1e4ed7c31d7789.jpg",
     "static/media/README_generator_scrnsht.jpg": "/static/media/README_generator_scrnsht.87805dc31d1ae3370e3d.jpg",
     "static/media/public-sans-latin-400-normal.woff": "/static/media/public-sans-latin-400-normal.9d2594c80c36f4b1e2ee.woff",
@@ -20,12 +21,12 @@
     "static/media/public-sans-vietnamese-400-normal.woff": "/static/media/public-sans-vietnamese-400-normal.9b355e63a25fe5dec690.woff",
     "static/media/public-sans-vietnamese-400-normal.woff2": "/static/media/public-sans-vietnamese-400-normal.4490eed5a77c4164de3d.woff2",
     "index.html": "/index.html",
-    "main.bcb6d63e.css.map": "/static/css/main.bcb6d63e.css.map",
-    "main.1d914bde.js.map": "/static/js/main.1d914bde.js.map",
+    "main.8caf3e3b.css.map": "/static/css/main.8caf3e3b.css.map",
+    "main.3b8f109e.js.map": "/static/js/main.3b8f109e.js.map",
     "787.a2cb61a6.chunk.js.map": "/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bcb6d63e.css",
-    "static/js/main.1d914bde.js"
+    "static/css/main.8caf3e3b.css",
+    "static/js/main.3b8f109e.js"
   ]
 }
