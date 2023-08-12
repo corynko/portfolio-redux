@@ -195,24 +195,24 @@ button:active {
 }
 .logoLinkDiv:hover,
 .logoTextLink:hover {
+  color: var(--medium);
+  transition: all 0.4s ease-in-out;
   .logoLink {
     stroke: var(--medium);
     fill: var(--medium);
     transition: all 0.4s ease-in-out;
   }
-  color: var(--medium);
-  transition: all 0.4s ease-in-out;
 }
 .logoLinkDiv:active,
 .logoTextLink:active {
+  color: var(--darker);
+  scale: 95%;
+  transition: all 0.3s ease-out;
   .logoLink {
     stroke: var(--darker);
     fill: var(--darker);
     transition: all 0.3s ease-out;
   }
-  color: var(--darker);
-  scale: 95%;
-  transition: all 0.3s ease-out;
 }
 
 .linksDiv {
