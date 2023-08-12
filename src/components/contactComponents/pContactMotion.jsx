@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import Box from "@mui/material/Box";
+import resume from "../../assets/other/EK_Resume_081123_vert.pdf";
 
 function PContactMotion() {
   let divTopVariants = {
@@ -139,7 +140,8 @@ function PContactMotion() {
               animate="finished"
               className="pageBodyText contactLink"
               id="contactLink"
-              href="https://u.pcloud.link/publink/show?code=XZC8iAVZfQ49iYgLe28WCvkJ2C0znLO6fMRk"
+              href={resume}
+              download="Ethan_Kotel_Résumé"
               target="_blank"
             >
               Résumé
