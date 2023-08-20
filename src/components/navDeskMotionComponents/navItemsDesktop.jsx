@@ -51,7 +51,6 @@ export default function NavItemsDesktop() {
               maxHeight: "100px",
               whiteSpace: "nowrap",
               flexGrow: 1,
-              borderRadius: "20%",
             }}
             fullWidth={true}
           >
@@ -69,7 +68,6 @@ export default function NavItemsDesktop() {
               maxHeight: "100px",
               whiteSpace: "nowrap",
               flexGrow: 1,
-              borderRadius: "20%",
             }}
             fullWidth={true}
           >
@@ -87,7 +85,6 @@ export default function NavItemsDesktop() {
               maxHeight: "100px",
               whiteSpace: "nowrap",
               flexGrow: 1,
-              borderRadius: "20%",
             }}
             fullWidth={true}
           >
@@ -104,7 +101,6 @@ export default function NavItemsDesktop() {
             maxHeight: "100px",
             whiteSpace: "nowrap",
             flexGrow: 1,
-            borderRadius: "20%",
           }}
           className="externalBtn"
           href="https://ethankotel.photos"
@@ -121,7 +117,6 @@ export default function NavItemsDesktop() {
             maxHeight: "100px",
             whiteSpace: "nowrap",
             flexGrow: 1,
-            borderRadius: "20%",
           }}
           className="externalBtn"
           href="https://www.ethankotel.com/"
