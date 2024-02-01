@@ -12,6 +12,7 @@ import workoutWizard from "../../assets/images/projects/workout_wizard_scrnsht.j
 import portfolio from "../../assets/images/projects/portfolio_scrnsht.jpg";
 import readmeGen from "../../assets/images/projects/README_generator_scrnsht.jpg";
 import nhlFanPlan from "../../assets/images/projects/nhl_fan_plan_scrnsht.jpg";
+import astroDash from "../../assets/images/projects/astroDash_scrnsht.png";
 
 export default function ImgMediaCard() {
   let divVariants = {
@@ -88,6 +89,41 @@ export default function ImgMediaCard() {
           <Card className="projectCard">
             <CardMedia
               component="img"
+              alt="astroDash screenshot"
+              className="projectImg"
+              src={astroDash}
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+                astroDash
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                A data aggregator for planning astrophotography shoots using
+                third party API's. Currently in progress.
+              </Typography>
+            </CardContent>
+            <CardActions className="center">
+              <Button
+                target="_blank"
+                href="https://github.com/corynko/astrodash"
+                size="small"
+              >
+                GitHub
+              </Button>
+              <Button
+                target="_blank"
+                href="https://astrodash.space"
+                size="small"
+              >
+                Live Site
+              </Button>
+            </CardActions>
+          </Card>
+        </motion.div>
+        <motion.div variants={divVariants2} initial="start" animate="finished">
+          <Card className="projectCard">
+            <CardMedia
+              component="img"
               alt="Code Gauntlet screen shot"
               className="projectImg"
               s
@@ -121,7 +157,7 @@ export default function ImgMediaCard() {
             </CardActions>
           </Card>
         </motion.div>
-        <motion.div variants={divVariants2} initial="start" animate="finished">
+        <motion.div variants={divVariants3} initial="start" animate="finished">
           <Card className="projectCard">
             <CardMedia
               component="img"
@@ -157,8 +193,9 @@ export default function ImgMediaCard() {
             </CardActions>
           </Card>
         </motion.div>
-
-        <motion.div variants={divVariants3} initial="start" animate="finished">
+      </div>
+      <div className="cardDivWrapper center">
+        <motion.div variants={divVariants4} initial="start" animate="finished">
           <Card className="projectCard">
             <CardMedia
               component="img"
@@ -190,36 +227,6 @@ export default function ImgMediaCard() {
                 size="small"
               >
                 Live Site
-              </Button>
-            </CardActions>
-          </Card>
-        </motion.div>
-      </div>
-      <div className="cardDivWrapper center">
-        <motion.div variants={divVariants4} initial="start" animate="finished">
-          <Card className="projectCard">
-            <CardMedia
-              component="img"
-              alt="readme generator screen shot"
-              className="projectImg"
-              src={readmeGen}
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                README Generator
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                A command line interface built with NodeJS, Inquirer, and FS for
-                quickly generating README markup files.
-              </Typography>
-            </CardContent>
-            <CardActions className="center">
-              <Button
-                target="_blank"
-                href="https://github.com/corynko/README-Generator"
-                size="small"
-              >
-                GitHub
               </Button>
             </CardActions>
           </Card>
