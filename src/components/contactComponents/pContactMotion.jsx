@@ -11,7 +11,7 @@ function PContactMotion() {
       transition: {
         duration: 1,
         ease: "easeInOut",
-        delay: 1.6,
+        delay: 0.5,
       },
     },
   };
@@ -23,7 +23,7 @@ function PContactMotion() {
       transition: {
         duration: 1.5,
         ease: "easeInOut",
-        delay: 1.8,
+        delay: 0.8,
       },
     },
   };
@@ -35,7 +35,7 @@ function PContactMotion() {
       transition: {
         duration: 1.5,
         ease: "easeInOut",
-        delay: 2,
+        delay: 1.1,
       },
     },
   };
@@ -47,7 +47,7 @@ function PContactMotion() {
       transition: {
         duration: 1.5,
         ease: "easeInOut",
-        delay: 2.2,
+        delay: 1.4,
       },
     },
   };
@@ -58,7 +58,7 @@ function PContactMotion() {
       transition: {
         duration: 1.5,
         ease: "easeInOut",
-        delay: 2.5,
+        delay: 1.7,
       },
     },
   };
@@ -69,7 +69,7 @@ function PContactMotion() {
       transition: {
         duration: 1.5,
         ease: "easeInOut",
-        delay: 2.8,
+        delay: 2,
       },
     },
   };
@@ -80,7 +80,7 @@ function PContactMotion() {
       transition: {
         duration: 1.5,
         ease: "easeInOut",
-        delay: 3.1,
+        delay: 2.3,
       },
     },
   };
@@ -91,7 +91,7 @@ function PContactMotion() {
       transition: {
         duration: 1.5,
         ease: "easeInOut",
-        delay: 3.4,
+        delay: 2.7,
       },
     },
   };

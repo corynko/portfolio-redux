@@ -10,7 +10,7 @@ function H1ContactDrawMotion() {
       transition: {
         duration: 1,
         ease: "easeInOut",
-        delay: 1.6,
+        delay: 0.3,
       },
     },
   };

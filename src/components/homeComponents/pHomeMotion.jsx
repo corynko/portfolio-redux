@@ -11,7 +11,7 @@ function PHomeMotion() {
       transition: {
         duration: 1.3,
         ease: "easeInOut",
-        delay: 1.9,
+        delay: 1,
       },
     },
   };
@@ -23,7 +23,7 @@ function PHomeMotion() {
       transition: {
         duration: 1.8,
         ease: "easeInOut",
-        delay: 2.3,
+        delay: 1.3,
       },
     },
   };
@@ -35,7 +35,7 @@ function PHomeMotion() {
       transition: {
         duration: 1.8,
         ease: "easeInOut",
-        delay: 2.5,
+        delay: 1.6,
       },
     },
   };
@@ -48,10 +48,10 @@ function PHomeMotion() {
       transition: {
         duration: 1.5,
         ease: "easeInOut",
-        delay: 2.2,
+        delay: 1,
         borderRadius: {
           duration: 1.5,
-          delay: 1.9,
+          delay: 1,
         },
       },
     },

@@ -9,7 +9,7 @@ function H1ProjectDrawMotion() {
       transition: {
         duration: 1,
         ease: "easeInOut",
-        delay: 1.6,
+        delay: 0.7,
       },
     },
   };

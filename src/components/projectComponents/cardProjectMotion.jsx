@@ -26,7 +26,7 @@ export default function ImgMediaCard() {
       transition: {
         duration: 1.5,
         ease: "easeInOut",
-        delay: 2.2,
+        delay: 1.5,
       },
     },
   };
@@ -37,7 +37,7 @@ export default function ImgMediaCard() {
       transition: {
         duration: 1.5,
         ease: "easeInOut",
-        delay: 2.5,
+        delay: 1.8,
       },
     },
   };
@@ -48,7 +48,7 @@ export default function ImgMediaCard() {
       transition: {
         duration: 1.5,
         ease: "easeInOut",
-        delay: 2.8,
+        delay: 2.1,
       },
     },
   };
@@ -59,7 +59,7 @@ export default function ImgMediaCard() {
       transition: {
         duration: 1.5,
         ease: "easeInOut",
-        delay: 3.1,
+        delay: 2.4,
       },
     },
   };
@@ -70,7 +70,7 @@ export default function ImgMediaCard() {
       transition: {
         duration: 1.5,
         ease: "easeInOut",
-        delay: 3.4,
+        delay: 2.7,
       },
     },
   };
@@ -81,7 +81,29 @@ export default function ImgMediaCard() {
       transition: {
         duration: 1.5,
         ease: "easeInOut",
-        delay: 3.7,
+        delay: 3,
+      },
+    },
+  };
+  let divVariants7 = {
+    start: { opacity: 0 },
+    finished: {
+      opacity: 1,
+      transition: {
+        duration: 1.5,
+        ease: "easeInOut",
+        delay: 3.3,
+      },
+    },
+  };
+  let divVariants8 = {
+    start: { opacity: 0 },
+    finished: {
+      opacity: 1,
+      transition: {
+        duration: 1.5,
+        ease: "easeInOut",
+        delay: 3.4,
       },
     },
   };
@@ -203,13 +225,6 @@ export default function ImgMediaCard() {
             <CardActions className="center">
               <Button
                 target="_blank"
-                href="https://github.com/ryantixier/code-gauntlet"
-                size="small"
-              >
-                GitHub
-              </Button>
-              <Button
-                target="_blank"
                 href="https://code-gauntlet-3e9a71d036dd.herokuapp.com/"
                 size="small"
               >
@@ -220,7 +235,7 @@ export default function ImgMediaCard() {
         </motion.div>
       </div>
       <div className="cardDivWrapper center">
-        <motion.div variants={divVariants4} initial="start" animate="finished">
+        <motion.div variants={divVariants5} initial="start" animate="finished">
           <Card className="projectCard">
             <CardMedia
               component="img"
@@ -256,7 +271,7 @@ export default function ImgMediaCard() {
             </CardActions>
           </Card>
         </motion.div>
-        <motion.div variants={divVariants2} initial="start" animate="finished">
+        <motion.div variants={divVariants6} initial="start" animate="finished">
           <Card className="projectCard">
             <CardMedia
               component="img"
@@ -293,7 +308,7 @@ export default function ImgMediaCard() {
             </CardActions>
           </Card>
         </motion.div>
-        <motion.div variants={divVariants3} initial="start" animate="finished">
+        <motion.div variants={divVariants7} initial="start" animate="finished">
           <Card className="projectCard">
             <CardMedia
               component="img"
@@ -329,7 +344,7 @@ export default function ImgMediaCard() {
             </CardActions>
           </Card>
         </motion.div>
-        <motion.div variants={divVariants5} initial="start" animate="finished">
+        <motion.div variants={divVariants8} initial="start" animate="finished">
           <Card className="projectCard">
             <CardMedia
               component="img"

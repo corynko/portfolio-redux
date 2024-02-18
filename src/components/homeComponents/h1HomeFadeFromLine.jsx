@@ -9,7 +9,7 @@ function H1HomeDrawMotion() {
       transition: {
         duration: 1,
         ease: "easeInOut",
-        delay: 1.6,
+        delay: 0.3,
       },
     },
   };
@@ -21,7 +21,7 @@ function H1HomeDrawMotion() {
       transition: {
         duration: 1.5,
         ease: "easeInOut",
-        delay: 1.8,
+        delay: 0.6,
       },
     },
   };

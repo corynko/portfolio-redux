@@ -11,7 +11,7 @@ function ImgHomeMotion() {
       transition: {
         duration: 1.4,
         ease: "easeOut",
-        delay: 1,
+        delay: 0,
 
         borderRadius: {
           duration: 1,
