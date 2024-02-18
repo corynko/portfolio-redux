@@ -34,7 +34,7 @@ function H1HomeDrawMotion() {
         animate={"finished"}
         className="pageH1"
       >
-        DENVER BASED FULL STACK DEVELOPER
+        DENVER BASED FULL STACK DEVELOPER AND DIGITAL MARKETING SPECIALIST
       </motion.h1>
       <motion.h3
         className="pageH3"

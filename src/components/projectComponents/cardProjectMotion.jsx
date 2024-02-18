@@ -6,13 +6,17 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import { motion } from "framer-motion";
 
-import smBackend from "../../assets/images/projects/smbackend_scrnsht.jpg";
+import evergroove from "../../assets/images/projects/evergroove_scrnsht.png";
+import insight from "../../assets/images/projects/insight_consultation_scrnsht.png";
+import ellmanGallery from "../../assets/images/projects/ellman_gallery_scrnsht.png";
+import cwPortfolio from "../../assets/images/projects/cw_portfolio_scrnsht.png";
 import codeGauntlet from "../../assets/images/projects/code_gauntlet_scrnsht.jpg";
 import workoutWizard from "../../assets/images/projects/workout_wizard_scrnsht.jpg";
 import portfolio from "../../assets/images/projects/portfolio_scrnsht.jpg";
-import readmeGen from "../../assets/images/projects/README_generator_scrnsht.jpg";
 import nhlFanPlan from "../../assets/images/projects/nhl_fan_plan_scrnsht.jpg";
 import astroDash from "../../assets/images/projects/astroDash_scrnsht.png";
+
+import cwPortfolioPDF from "../../assets/other/CW_Portfolio_EthanKotel.pdf";
 
 export default function ImgMediaCard() {
   let divVariants = {
@@ -124,6 +128,138 @@ export default function ImgMediaCard() {
           <Card className="projectCard">
             <CardMedia
               component="img"
+              alt="Evergroove Studio screen shot"
+              className="projectImg"
+              s
+              src={evergroove}
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+                Evergroove Studio
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                Colorado's recording retreat, located in Evergreen, Colorado.
+                Site designed, built, and written, and photo collateral created
+                by me.
+              </Typography>
+            </CardContent>
+            <CardActions className="center">
+              <Button
+                target="_blank"
+                href="https://evergroove.com/"
+                size="small"
+              >
+                Live Site
+              </Button>
+            </CardActions>
+          </Card>
+        </motion.div>
+        <motion.div variants={divVariants3} initial="start" animate="finished">
+          <Card className="projectCard">
+            <CardMedia
+              component="img"
+              alt="Copywriting Portfolio screen shot"
+              className="projectImg"
+              src={cwPortfolio}
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+                Copywriting Portfolio
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                A PDF download, containing samples designed to help nonprofit
+                leadership teams learn how to begin marketing digitally.
+              </Typography>
+            </CardContent>
+            <CardActions className="center">
+              <Button
+                size="small"
+                download="CW_Portfolio_EthanKotel"
+                href={cwPortfolioPDF}
+              >
+                Download
+              </Button>
+            </CardActions>
+          </Card>
+        </motion.div>
+        <motion.div variants={divVariants4} initial="start" animate="finished">
+          <Card className="projectCard">
+            <CardMedia
+              component="img"
+              alt="Insight Consultation screen shot"
+              className="projectImg"
+              s
+              src={insight}
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+                Insight Consultation
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                Dedicated to helping parents learn more about how to best
+                support their children. Designed, built, and written by me.
+              </Typography>
+            </CardContent>
+            <CardActions className="center">
+              <Button
+                target="_blank"
+                href="https://github.com/ryantixier/code-gauntlet"
+                size="small"
+              >
+                GitHub
+              </Button>
+              <Button
+                target="_blank"
+                href="https://code-gauntlet-3e9a71d036dd.herokuapp.com/"
+                size="small"
+              >
+                Live Site
+              </Button>
+            </CardActions>
+          </Card>
+        </motion.div>
+      </div>
+      <div className="cardDivWrapper center">
+        <motion.div variants={divVariants4} initial="start" animate="finished">
+          <Card className="projectCard">
+            <CardMedia
+              component="img"
+              alt="portfolio screen shot"
+              className="projectImg"
+              src={portfolio}
+            />
+            <CardContent>
+              <Typography gutterBottom variant="h5" component="div">
+                This Portfolio
+              </Typography>
+              <Typography variant="body2" color="text.secondary">
+                My portfolio is open source! If you see something you like, feel
+                free to clone the repo and experiment with it yourself. Initial
+                build finished in 7 days.
+              </Typography>
+            </CardContent>
+            <CardActions className="center">
+              <Button
+                target="_blank"
+                href="https://github.com/corynko/portfolio-redux"
+                size="small"
+              >
+                GitHub
+              </Button>
+              <Button
+                target="_blank"
+                href="https://ethankotel.dev"
+                size="small"
+              >
+                Live Site
+              </Button>
+            </CardActions>
+          </Card>
+        </motion.div>
+        <motion.div variants={divVariants2} initial="start" animate="finished">
+          <Card className="projectCard">
+            <CardMedia
+              component="img"
               alt="Code Gauntlet screen shot"
               className="projectImg"
               s
@@ -193,44 +329,6 @@ export default function ImgMediaCard() {
             </CardActions>
           </Card>
         </motion.div>
-      </div>
-      <div className="cardDivWrapper center">
-        <motion.div variants={divVariants4} initial="start" animate="finished">
-          <Card className="projectCard">
-            <CardMedia
-              component="img"
-              alt="portfolio screen shot"
-              className="projectImg"
-              src={portfolio}
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                This Portfolio
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                My portfolio is open source! If you see something you like, feel
-                free to clone the repo and experiment with it yourself. Initial
-                build finished in 7 days.
-              </Typography>
-            </CardContent>
-            <CardActions className="center">
-              <Button
-                target="_blank"
-                href="https://github.com/corynko/portfolio-redux"
-                size="small"
-              >
-                GitHub
-              </Button>
-              <Button
-                target="_blank"
-                href="https://ethankotel.dev"
-                size="small"
-              >
-                Live Site
-              </Button>
-            </CardActions>
-          </Card>
-        </motion.div>
         <motion.div variants={divVariants5} initial="start" animate="finished">
           <Card className="projectCard">
             <CardMedia
@@ -263,34 +361,6 @@ export default function ImgMediaCard() {
                 size="small"
               >
                 Live Site
-              </Button>
-            </CardActions>
-          </Card>
-        </motion.div>
-        <motion.div variants={divVariants6} initial="start" animate="finished">
-          <Card className="projectCard">
-            <CardMedia
-              component="img"
-              alt="Social Media Backend screen shot"
-              className="projectImg"
-              src={smBackend}
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                Social Media Backend
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                A working NoSQL database API, using NodeJS, MongoDB, and
-                Mongoose.
-              </Typography>
-            </CardContent>
-            <CardActions className="center">
-              <Button
-                target="_blank"
-                href="https://github.com/corynko/Social-Media-Backend"
-                size="small"
-              >
-                GitHub
               </Button>
             </CardActions>
           </Card>
