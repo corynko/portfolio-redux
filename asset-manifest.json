@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.cfaf5ad6.css",
-    "main.js": "/static/js/main.23ae1c59.js",
-    "static/js/787.a2cb61a6.chunk.js": "/static/js/787.a2cb61a6.chunk.js",
+    "main.css": "/static/css/main.09a5257a.css",
+    "main.js": "/static/js/main.19faf1ed.js",
+    "static/js/453.9415623e.chunk.js": "/static/js/453.9415623e.chunk.js",
     "static/media/insight_consultation_scrnsht.png": "/static/media/insight_consultation_scrnsht.bd605b0496dabc96bf19.png",
     "static/media/ellman_gallery_scrnsht.png": "/static/media/ellman_gallery_scrnsht.e5e54c461ca3189ff381.png",
     "static/media/evergroove_scrnsht.png": "/static/media/evergroove_scrnsht.526c5b9b5e2c94d5b803.png",
@@ -18,19 +18,19 @@
     "static/media/EK_Resume_081123_vert.pdf": "/static/media/EK_Resume_081123_vert.11d9148f443695626dcf.pdf",
     "static/media/workout_wizard_scrnsht.jpg": "/static/media/workout_wizard_scrnsht.3b3ffd1e4ed7c31d7789.jpg",
     "static/media/cw_portfolio_scrnsht.png": "/static/media/cw_portfolio_scrnsht.b8c58d98ef4baa0b6861.png",
-    "static/media/public-sans-latin-400-normal.woff": "/static/media/public-sans-latin-400-normal.9d2594c80c36f4b1e2ee.woff",
-    "static/media/public-sans-latin-400-normal.woff2": "/static/media/public-sans-latin-400-normal.4758638f2eeeaf0dd6c4.woff2",
-    "static/media/public-sans-latin-ext-400-normal.woff": "/static/media/public-sans-latin-ext-400-normal.8d4f2b95588a9c535ad8.woff",
-    "static/media/public-sans-latin-ext-400-normal.woff2": "/static/media/public-sans-latin-ext-400-normal.cbd34e580c9965bfc3c9.woff2",
-    "static/media/public-sans-vietnamese-400-normal.woff": "/static/media/public-sans-vietnamese-400-normal.9b355e63a25fe5dec690.woff",
-    "static/media/public-sans-vietnamese-400-normal.woff2": "/static/media/public-sans-vietnamese-400-normal.4490eed5a77c4164de3d.woff2",
+    "static/media/public-sans-latin-400-normal.woff": "/static/media/public-sans-latin-400-normal.c49c54e2dace7c6c0d24.woff",
+    "static/media/public-sans-latin-400-normal.woff2": "/static/media/public-sans-latin-400-normal.395632508f028112812e.woff2",
+    "static/media/public-sans-latin-ext-400-normal.woff": "/static/media/public-sans-latin-ext-400-normal.ec6f5fe4a39d95207b1f.woff",
+    "static/media/public-sans-latin-ext-400-normal.woff2": "/static/media/public-sans-latin-ext-400-normal.fb7d8869799c6eec9401.woff2",
+    "static/media/public-sans-vietnamese-400-normal.woff": "/static/media/public-sans-vietnamese-400-normal.529cb4480800870e4c21.woff",
+    "static/media/public-sans-vietnamese-400-normal.woff2": "/static/media/public-sans-vietnamese-400-normal.cd61d3bcc45fcd8389b9.woff2",
     "index.html": "/index.html",
-    "main.cfaf5ad6.css.map": "/static/css/main.cfaf5ad6.css.map",
-    "main.23ae1c59.js.map": "/static/js/main.23ae1c59.js.map",
-    "787.a2cb61a6.chunk.js.map": "/static/js/787.a2cb61a6.chunk.js.map"
+    "main.09a5257a.css.map": "/static/css/main.09a5257a.css.map",
+    "main.19faf1ed.js.map": "/static/js/main.19faf1ed.js.map",
+    "453.9415623e.chunk.js.map": "/static/js/453.9415623e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cfaf5ad6.css",
-    "static/js/main.23ae1c59.js"
+    "static/css/main.09a5257a.css",
+    "static/js/main.19faf1ed.js"
   ]
 }
